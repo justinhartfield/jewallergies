@@ -1,35 +1,21 @@
 User-agent: *
 Allow: /
 
-# Sitemap
+# Sitemap location
 Sitemap: https://jewallergies.com/sitemap.xml
 
-# Important pages
-Allow: /conditions
-Allow: /testing
-Allow: /resources
-Allow: /about
-
-# Condition categories
-Allow: /conditions/ashkenazi
-Allow: /conditions/sephardic
-Allow: /conditions/mizrahi
-Allow: /conditions/allergies
-
-# Individual conditions
-Allow: /conditions/gaucher-disease
-Allow: /conditions/tay-sachs
-Allow: /conditions/cystic-fibrosis
-Allow: /conditions/familial-dysautonomia
-Allow: /conditions/brca-mutations
-Allow: /conditions/canavan-disease
-
-# Resources
-Allow: /testing/centers
-Allow: /resources/support
-Allow: /resources/library
-Allow: /testing/counseling
-
-# Crawl delay (optional)
+# Crawl delay for respectful crawling
 Crawl-delay: 1
+
+# Disallow admin or private areas (if any)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.pdf$
+
+# Allow all medical and educational content
+Allow: /conditions/
+Allow: /populations/
+Allow: /testing/
+Allow: /resources/
+Allow: /stories/
 

@@ -1,46 +1,664 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JewAllergies.com - Comprehensive Guide to Jewish Genetic Conditions</title>
-    <meta name="description" content="Authoritative resource for genetic conditions and allergies affecting Jewish populations. Learn about Ashkenazi, Sephardic, and Mizrahi genetic health." />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JewAllergies.com - Comprehensive Guide to Jewish Genetic Conditions & Allergies</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="keywords" content="Jewish genetic diseases, Ashkenazi genetic conditions, Sephardic genetic disorders, Jewish genetic testing, Tay-Sachs disease, Gaucher disease, BRCA mutations Jewish, Jewish lactose intolerance, Familial dysautonomia, Canavan disease" />
-    <meta name="author" content="JewAllergies.com Medical Team" />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="English" />
+    <meta name="description" content="Comprehensive resource for genetic conditions and allergies affecting Ashkenazi, Sephardic, and Mizrahi Jewish populations. Evidence-based information, personal stories, and genetic testing resources.">
+    <meta name="keywords" content="Jewish genetic diseases, Ashkenazi genetic conditions, Tay-Sachs, Gaucher disease, BRCA mutations, genetic testing, Jewish health, hereditary diseases">
+    <meta name="author" content="JewAllergies.com">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jewallergies.com/">
     
     <!-- Open Graph Meta Tags -->
-    <meta property="og:title" content="JewAllergies.com - Comprehensive Guide to Jewish Genetic Conditions" />
-    <meta property="og:description" content="Authoritative resource for genetic conditions and allergies affecting Jewish populations. Learn about Ashkenazi, Sephardic, and Mizrahi genetic health." />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://jewallergies.com" />
-    <meta property="og:image" content="https://jewallergies.com/og-image.jpg" />
-    <meta property="og:site_name" content="JewAllergies.com" />
+    <meta property="og:title" content="JewAllergies.com - Jewish Genetic Conditions Guide">
+    <meta property="og:description" content="Comprehensive resource for genetic conditions affecting Jewish populations with personal stories and medical information.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jewallergies.com/">
+    <meta property="og:image" content="https://jewallergies.com/images/og-image.jpg">
+    <meta property="og:site_name" content="JewAllergies.com">
     
     <!-- Twitter Card Meta Tags -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="JewAllergies.com - Comprehensive Guide to Jewish Genetic Conditions" />
-    <meta name="twitter:description" content="Authoritative resource for genetic conditions and allergies affecting Jewish populations." />
-    <meta name="twitter:image" content="https://jewallergies.com/twitter-image.jpg" />
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="JewAllergies.com - Jewish Genetic Conditions Guide">
+    <meta name="twitter:description" content="Comprehensive resource for genetic conditions affecting Jewish populations.">
+    <meta name="twitter:image" content="https://jewallergies.com/images/twitter-card.jpg">
     
     <!-- Medical/Health Specific Meta Tags -->
-    <meta name="health-topics" content="genetic diseases, Jewish genetics, carrier screening, genetic counseling" />
-    <meta name="medical-disclaimer" content="This information is for educational purposes only and should not replace professional medical advice." />
+    <meta name="health-topic" content="genetic disorders">
+    <meta name="medical-disclaimer" content="This website provides educational information only and should not replace professional medical advice.">
     
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://jewallergies.com" />
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "JewAllergies.com",
+        "url": "https://jewallergies.com",
+        "logo": "https://jewallergies.com/images/logo.png",
+        "description": "Comprehensive resource for genetic conditions and allergies affecting Jewish populations",
+        "sameAs": [
+            "https://twitter.com/jewallergies",
+            "https://facebook.com/jewallergies"
+        ],
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer service",
+            "email": "info@jewallergies.com"
+        }
+    }
+    </script>
     
-    <!-- Preconnect for Performance -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script type="module" crossorigin src="/assets/index-CvlQJJcv.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-tjjbY8sX.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+    <!-- Structured Data - Website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "JewAllergies.com",
+        "url": "https://jewallergies.com",
+        "description": "Comprehensive guide to genetic conditions affecting Jewish populations",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://jewallergies.com/search?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "JewAllergies.com"
+        }
+    }
+    </script>
+    
+    <!-- Structured Data - Medical Website -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "Jewish Genetic Conditions Guide",
+        "description": "Evidence-based information about genetic conditions affecting Jewish populations",
+        "medicalAudience": [
+            {
+                "@type": "MedicalAudience",
+                "audienceType": "Patient"
+            },
+            {
+                "@type": "MedicalAudience", 
+                "audienceType": "MedicalResearcher"
+            }
+        ],
+        "about": {
+            "@type": "MedicalCondition",
+            "name": "Jewish Genetic Diseases"
+        }
+    }
+    </script>
+    
+    <!-- Structured Data - Breadcrumb -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://jewallergies.com/"
+            }
+        ]
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #4a5568;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+        }
+        
+        .nav-links a:hover {
+            color: #667eea;
+            background: rgba(102, 126, 234, 0.1);
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 4rem 0;
+            color: white;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            display: inline-block;
+        }
+        
+        .btn-primary {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+        
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+        
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .main-content {
+            background: white;
+            margin: 2rem 0;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .stats-section {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 3rem 0;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            text-align: center;
+        }
+        
+        .stat-card {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+        
+        .stat-number {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+        
+        .conditions-section {
+            padding: 4rem 0;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #2d3748;
+        }
+        
+        .conditions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+        
+        .condition-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #667eea;
+        }
+        
+        .condition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        
+        .condition-card h3 {
+            color: #2d3748;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+        
+        .condition-meta {
+            display: flex;
+            gap: 1rem;
+            margin: 1rem 0;
+            flex-wrap: wrap;
+        }
+        
+        .meta-tag {
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .frequency {
+            background: #e6fffa;
+            color: #234e52;
+        }
+        
+        .severity {
+            background: #fed7d7;
+            color: #742a2a;
+        }
+        
+        .population {
+            background: #e6f3ff;
+            color: #2a4365;
+        }
+        
+        .learn-more {
+            display: inline-block;
+            margin-top: 1rem;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        
+        .learn-more:hover {
+            color: #764ba2;
+        }
+        
+        .resources-section {
+            background: #f7fafc;
+            padding: 4rem 0;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+        
+        .resource-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+        
+        .resource-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            background: #2d3748;
+            color: white;
+            padding: 3rem 0 1rem;
+        }
+        
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .footer-section h4 {
+            margin-bottom: 1rem;
+            color: #e2e8f0;
+        }
+        
+        .footer-section ul {
+            list-style: none;
+        }
+        
+        .footer-section ul li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .footer-section ul li a {
+            color: #a0aec0;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        
+        .footer-section ul li a:hover {
+            color: #667eea;
+        }
+        
+        .footer-bottom {
+            border-top: 1px solid #4a5568;
+            padding-top: 1rem;
+            text-align: center;
+            color: #a0aec0;
+        }
+        
+        .medical-disclaimer {
+            background: #fff5f5;
+            border: 1px solid #fed7d7;
+            border-radius: 10px;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            color: #742a2a;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .nav-links {
+                gap: 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .conditions-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">🧬 JewAllergies.com</a>
+            <ul class="nav-links">
+                <li><a href="/conditions/">Conditions</a></li>
+                <li><a href="/populations/">Populations</a></li>
+                <li><a href="/testing/">Testing</a></li>
+                <li><a href="/resources/">Resources</a></li>
+                <li><a href="/stories/">Stories</a></li>
+                <li><a href="/about/">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Understanding Jewish Genetic Health</h1>
+                <p>Comprehensive, evidence-based information about genetic conditions and allergies affecting Ashkenazi, Sephardic, and Mizrahi Jewish populations. Learn from medical research, personal stories, and community experiences.</p>
+                <div class="cta-buttons">
+                    <a href="/conditions/" class="btn btn-primary">Explore Conditions</a>
+                    <a href="/testing/" class="btn btn-secondary">Find Testing</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="main-content">
+            <section class="stats-section">
+                <div class="container">
+                    <div class="stats-grid">
+                        <div class="stat-card">
+                            <div class="stat-number">1 in 4</div>
+                            <p>Ashkenazi Jews carry at least one genetic mutation</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">100+</div>
+                            <p>Known Jewish genetic conditions</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">90%</div>
+                            <p>Reduction in Tay-Sachs cases through screening</p>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-number">1 in 40</div>
+                            <p>Ashkenazi Jews have BRCA mutations</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="conditions-section">
+                <div class="container">
+                    <h2 class="section-title">Most Common Genetic Conditions</h2>
+                    
+                    <div class="conditions-grid">
+                        <article class="condition-card">
+                            <h3>Tay-Sachs Disease</h3>
+                            <p>Progressive neurological disorder affecting nerve cells, causing severe developmental regression and typically fatal by age 5. Most common in Ashkenazi Jewish populations.</p>
+                            <div class="condition-meta">
+                                <span class="meta-tag frequency">1 in 27 carriers</span>
+                                <span class="meta-tag severity">Severe</span>
+                                <span class="meta-tag population">Ashkenazi</span>
+                            </div>
+                            <a href="/conditions/tay-sachs/" class="learn-more">Learn More →</a>
+                        </article>
+
+                        <article class="condition-card">
+                            <h3>Gaucher Disease</h3>
+                            <p>Most common genetic disease affecting Ashkenazi Jews. Enzyme deficiency causing organ enlargement and bone problems. Type 1 is manageable with treatment.</p>
+                            <div class="condition-meta">
+                                <span class="meta-tag frequency">1 in 10 carriers</span>
+                                <span class="meta-tag severity">Moderate</span>
+                                <span class="meta-tag population">Ashkenazi</span>
+                            </div>
+                            <a href="/conditions/gaucher/" class="learn-more">Learn More →</a>
+                        </article>
+
+                        <article class="condition-card">
+                            <h3>BRCA Gene Mutations</h3>
+                            <p>Hereditary breast and ovarian cancer predisposition. Significantly higher rates in Ashkenazi Jewish women, with specific founder mutations.</p>
+                            <div class="condition-meta">
+                                <span class="meta-tag frequency">1 in 40 carriers</span>
+                                <span class="meta-tag severity">High Risk</span>
+                                <span class="meta-tag population">Ashkenazi</span>
+                            </div>
+                            <a href="/conditions/brca/" class="learn-more">Learn More →</a>
+                        </article>
+
+                        <article class="condition-card">
+                            <h3>Cystic Fibrosis</h3>
+                            <p>Affects lungs and digestive system with thick mucus production. Higher carrier rates in Ashkenazi Jewish populations compared to general population.</p>
+                            <div class="condition-meta">
+                                <span class="meta-tag frequency">1 in 24 carriers</span>
+                                <span class="meta-tag severity">Severe</span>
+                                <span class="meta-tag population">Ashkenazi</span>
+                            </div>
+                            <a href="/conditions/cystic-fibrosis/" class="learn-more">Learn More →</a>
+                        </article>
+
+                        <article class="condition-card">
+                            <h3>Familial Dysautonomia</h3>
+                            <p>Affects autonomic nervous system controlling vital functions. Almost exclusively found in Ashkenazi Jewish population.</p>
+                            <div class="condition-meta">
+                                <span class="meta-tag frequency">1 in 31 carriers</span>
+                                <span class="meta-tag severity">Severe</span>
+                                <span class="meta-tag population">Ashkenazi</span>
+                            </div>
+                            <a href="/conditions/familial-dysautonomia/" class="learn-more">Learn More →</a>
+                        </article>
+
+                        <article class="condition-card">
+                            <h3>Canavan Disease</h3>
+                            <p>Progressive brain disorder affecting white matter development. Causes severe developmental delays and shortened lifespan.</p>
+                            <div class="condition-meta">
+                                <span class="meta-tag frequency">1 in 60 carriers</span>
+                                <span class="meta-tag severity">Severe</span>
+                                <span class="meta-tag population">Ashkenazi</span>
+                            </div>
+                            <a href="/conditions/canavan/" class="learn-more">Learn More →</a>
+                        </article>
+                    </div>
+
+                    <div class="medical-disclaimer">
+                        <strong>Medical Disclaimer:</strong> This website provides educational information only and should not replace professional medical advice, diagnosis, or treatment. Always consult with qualified healthcare providers regarding genetic testing and medical decisions.
+                    </div>
+                </div>
+            </section>
+
+            <section class="resources-section">
+                <div class="container">
+                    <h2 class="section-title">Resources & Support</h2>
+                    <div class="resources-grid">
+                        <div class="resource-card">
+                            <div class="resource-icon">🧪</div>
+                            <h3>Genetic Testing</h3>
+                            <p>Find certified genetic testing centers and learn about carrier screening options for Jewish genetic diseases.</p>
+                            <a href="/testing/" class="btn btn-primary">Find Testing</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">👥</div>
+                            <h3>Support Groups</h3>
+                            <p>Connect with families and individuals affected by Jewish genetic conditions through support networks.</p>
+                            <a href="/support/" class="btn btn-primary">Find Support</a>
+                        </div>
+                        
+                        <div class="resource-card">
+                            <div class="resource-icon">📚</div>
+                            <h3>Educational Materials</h3>
+                            <p>Access comprehensive guides, research papers, and educational resources about Jewish genetic health.</p>
+                            <a href="/resources/" class="btn btn-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Genetic Conditions</h4>
+                    <ul>
+                        <li><a href="/conditions/tay-sachs/">Tay-Sachs Disease</a></li>
+                        <li><a href="/conditions/gaucher/">Gaucher Disease</a></li>
+                        <li><a href="/conditions/brca/">BRCA Mutations</a></li>
+                        <li><a href="/conditions/cystic-fibrosis/">Cystic Fibrosis</a></li>
+                        <li><a href="/conditions/">View All Conditions</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Populations</h4>
+                    <ul>
+                        <li><a href="/populations/ashkenazi/">Ashkenazi Jewish</a></li>
+                        <li><a href="/populations/sephardic/">Sephardic Jewish</a></li>
+                        <li><a href="/populations/mizrahi/">Mizrahi Jewish</a></li>
+                        <li><a href="/populations/comparison/">Population Comparison</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="/testing/">Genetic Testing</a></li>
+                        <li><a href="/counseling/">Genetic Counseling</a></li>
+                        <li><a href="/support/">Support Groups</a></li>
+                        <li><a href="/research/">Latest Research</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="/about/">About Us</a></li>
+                        <li><a href="/contact/">Contact</a></li>
+                        <li><a href="/privacy/">Privacy Policy</a></li>
+                        <li><a href="/terms/">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 JewAllergies.com. All rights reserved. | Educational content for informational purposes only.</p>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>
+
