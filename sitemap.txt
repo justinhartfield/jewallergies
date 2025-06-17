@@ -1,0 +1,40 @@
+# JewAllergies.com - Sitemap
+
+## Main Pages
+- Home (/) - Main landing page with overview
+- Conditions (/conditions) - Browse all genetic conditions
+- Testing (/testing) - Genetic testing information and resources
+- Resources (/resources) - Educational materials and support
+- About (/about) - About the organization and mission
+
+## Condition Categories
+- Ashkenazi Conditions (/conditions/ashkenazi)
+- Sephardic Conditions (/conditions/sephardic)
+- Mizrahi Conditions (/conditions/mizrahi)
+- Food Allergies (/conditions/allergies)
+
+## Individual Condition Pages
+- Gaucher Disease (/conditions/gaucher-disease)
+- Tay-Sachs Disease (/conditions/tay-sachs)
+- Cystic Fibrosis (/conditions/cystic-fibrosis)
+- Familial Dysautonomia (/conditions/familial-dysautonomia)
+- BRCA Gene Mutations (/conditions/brca-mutations)
+- Canavan Disease (/conditions/canavan-disease)
+- Beta Thalassemia (/conditions/beta-thalassemia)
+- Familial Mediterranean Fever (/conditions/fmf)
+- G6PD Deficiency (/conditions/g6pd-deficiency)
+
+## Resource Pages
+- Testing Centers (/testing/centers)
+- Support Groups (/resources/support)
+- Educational Library (/resources/library)
+- Genetic Counseling (/testing/counseling)
+- Research Updates (/resources/research)
+
+## Legal/Info Pages
+- Privacy Policy (/privacy)
+- Terms of Service (/terms)
+- Medical Disclaimer (/disclaimer)
+- Contact (/contact)
+- Sitemap (/sitemap)
+
