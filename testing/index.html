@@ -1,0 +1,1120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Testing Center | JewAllergies.com</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Your comprehensive guide to Jewish genetic testing. Interactive tools to help you decide on testing, find providers, understand costs, and interpret results. Start your genetic health journey today.">
+    <meta name="keywords" content="Jewish genetic testing, carrier screening, genetic counseling, Ashkenazi testing, genetic health, DNA testing">
+    <meta name="author" content="JewAllergies.com">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jewallergies.com/testing/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Genetic Testing Center | JewAllergies.com">
+    <meta property="og:description" content="Interactive tools and comprehensive guides for Jewish genetic testing decisions">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jewallergies.com/testing/">
+    <meta property="og:image" content="https://jewallergies.com/images/genetic-testing-center.jpg">
+    
+    <!-- Structured Data - Testing Service -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "MedicalWebPage",
+        "name": "Genetic Testing Center",
+        "description": "Comprehensive genetic testing resources and tools for Jewish genetic health",
+        "url": "https://jewallergies.com/testing/",
+        "mainEntity": {
+            "@type": "MedicalTest",
+            "name": "Jewish Genetic Carrier Screening",
+            "description": "Comprehensive genetic testing for Jewish genetic diseases",
+            "preparation": "Genetic counseling consultation recommended",
+            "usedToDiagnose": [
+                "Tay-Sachs Disease",
+                "Gaucher Disease", 
+                "BRCA Mutations",
+                "Cystic Fibrosis"
+            ]
+        },
+        "author": {
+            "@type": "Organization",
+            "name": "JewAllergies.com"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #7c3aed;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #7c3aed;
+        }
+        
+        /* Hero Section - Testing Theme */
+        .hero {
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 50%, #5b21b6 100%);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="dna" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M10,0 Q15,5 10,10 Q5,15 10,20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/><path d="M0,10 Q5,5 10,10 Q15,15 20,10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/></pattern></defs><rect width="100" height="100" fill="url(%23dna)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .hero-cta {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+        
+        .cta-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            padding: 1rem 2rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(10px);
+        }
+        
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .cta-button.primary {
+            background: white;
+            color: #7c3aed;
+        }
+        
+        .cta-button.primary:hover {
+            background: #f3f4f6;
+        }
+        
+        /* Testing Decision Tree Section */
+        .decision-tree {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .decision-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .decision-step {
+            margin-bottom: 2rem;
+            display: none;
+        }
+        
+        .decision-step.active {
+            display: block;
+        }
+        
+        .step-question {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .step-options {
+            display: grid;
+            gap: 1rem;
+        }
+        
+        .option-button {
+            background: white;
+            border: 2px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-align: left;
+        }
+        
+        .option-button:hover {
+            border-color: #7c3aed;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(124, 58, 237, 0.2);
+        }
+        
+        .option-title {
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .option-description {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        .decision-result {
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            display: none;
+        }
+        
+        .decision-result.show {
+            display: block;
+        }
+        
+        .result-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .result-content {
+            margin-bottom: 1.5rem;
+        }
+        
+        .restart-button {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            padding: 0.75rem 1.5rem;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .restart-button:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+        
+        /* Cost Calculator Section */
+        .cost-calculator {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+        }
+        
+        .calculator-container {
+            max-width: 700px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .calculator-title {
+            text-align: center;
+            font-size: 1.8rem;
+            color: #1f2937;
+            margin-bottom: 2rem;
+        }
+        
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .form-group select,
+        .form-group input {
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group select:focus,
+        .form-group input:focus {
+            outline: none;
+            border-color: #7c3aed;
+        }
+        
+        .calculate-button {
+            width: 100%;
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+            color: white;
+            padding: 1rem;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .calculate-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .cost-result {
+            margin-top: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 10px;
+            border-left: 5px solid #7c3aed;
+            display: none;
+        }
+        
+        .cost-result.show {
+            display: block;
+        }
+        
+        /* Testing Centers Section */
+        .testing-centers {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .centers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .center-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #7c3aed;
+            transition: transform 0.3s ease;
+        }
+        
+        .center-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .center-name {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .center-location {
+            color: #6b7280;
+            margin-bottom: 1rem;
+        }
+        
+        .center-features {
+            list-style: none;
+            margin-bottom: 1.5rem;
+        }
+        
+        .center-features li {
+            padding: 0.25rem 0;
+            color: #374151;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .center-features li::before {
+            content: '✓';
+            color: #7c3aed;
+            font-weight: bold;
+        }
+        
+        .center-contact {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .contact-button {
+            flex: 1;
+            background: #7c3aed;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .contact-button:hover {
+            background: #6d28d9;
+        }
+        
+        .contact-button.secondary {
+            background: transparent;
+            color: #7c3aed;
+            border: 2px solid #7c3aed;
+        }
+        
+        .contact-button.secondary:hover {
+            background: #7c3aed;
+            color: white;
+        }
+        
+        /* Preparation Guide Section */
+        .preparation-guide {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f3e8ff 0%, #e9d5ff 100%);
+        }
+        
+        .guide-steps {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .guide-step {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .guide-step:hover {
+            transform: translateY(-5px);
+        }
+        
+        .step-number {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #7c3aed 0%, #6d28d9 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin: 0 auto 1rem;
+        }
+        
+        .step-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .step-description {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-cta {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .form-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .centers-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">🧬 JewAllergies.com</a>
+            <ul class="nav-links">
+                <li><a href="/conditions/">Conditions</a></li>
+                <li><a href="/populations/">Populations</a></li>
+                <li><a href="/testing/" class="active">Testing</a></li>
+                <li><a href="/resources/">Resources</a></li>
+                <li><a href="/stories/">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Genetic Health Journey Starts Here</h1>
+                <p class="hero-subtitle">Navigate genetic testing with confidence. Our interactive tools help you understand your options, find providers, estimate costs, and prepare for testing. Take control of your genetic health today.</p>
+                
+                <div class="hero-cta">
+                    <a href="#decision-tree" class="cta-button primary">Should I Get Tested?</a>
+                    <a href="#cost-calculator" class="cta-button">Calculate Costs</a>
+                    <a href="#testing-centers" class="cta-button">Find Testing Centers</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="decision-tree" class="decision-tree">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Should You Get Genetic Testing?</h2>
+                <p class="section-subtitle">Answer a few questions to get personalized recommendations</p>
+            </div>
+            
+            <div class="decision-container">
+                <div class="decision-step active" data-step="1">
+                    <h3 class="step-question">What is your ancestry?</h3>
+                    <div class="step-options">
+                        <div class="option-button" data-next="2" data-value="ashkenazi">
+                            <div class="option-title">Ashkenazi Jewish</div>
+                            <div class="option-description">Central or Eastern European Jewish ancestry</div>
+                        </div>
+                        <div class="option-button" data-next="2" data-value="sephardic">
+                            <div class="option-title">Sephardic Jewish</div>
+                            <div class="option-description">Spanish, Portuguese, or Mediterranean Jewish ancestry</div>
+                        </div>
+                        <div class="option-button" data-next="2" data-value="mizrahi">
+                            <div class="option-title">Mizrahi Jewish</div>
+                            <div class="option-description">Middle Eastern or North African Jewish ancestry</div>
+                        </div>
+                        <div class="option-button" data-next="2" data-value="mixed">
+                            <div class="option-title">Mixed or Unknown</div>
+                            <div class="option-description">Multiple ancestries or uncertain heritage</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="decision-step" data-step="2">
+                    <h3 class="step-question">Are you planning to have children?</h3>
+                    <div class="step-options">
+                        <div class="option-button" data-next="3" data-value="planning">
+                            <div class="option-title">Yes, planning to have children</div>
+                            <div class="option-description">Currently planning or trying to conceive</div>
+                        </div>
+                        <div class="option-button" data-next="3" data-value="maybe">
+                            <div class="option-title">Maybe in the future</div>
+                            <div class="option-description">Considering having children someday</div>
+                        </div>
+                        <div class="option-button" data-next="3" data-value="no">
+                            <div class="option-title">No plans for children</div>
+                            <div class="option-description">Not planning to have biological children</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="decision-step" data-step="3">
+                    <h3 class="step-question">Do you have a family history of genetic conditions?</h3>
+                    <div class="step-options">
+                        <div class="option-button" data-next="result" data-value="yes">
+                            <div class="option-title">Yes, known family history</div>
+                            <div class="option-description">Family members with genetic conditions or carriers</div>
+                        </div>
+                        <div class="option-button" data-next="result" data-value="unknown">
+                            <div class="option-title">Unknown or uncertain</div>
+                            <div class="option-description">Limited family medical history information</div>
+                        </div>
+                        <div class="option-button" data-next="result" data-value="no">
+                            <div class="option-title">No known history</div>
+                            <div class="option-description">No known genetic conditions in family</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="decision-result" id="testingResult">
+                    <h3 class="result-title">Your Testing Recommendation</h3>
+                    <div class="result-content" id="resultContent"></div>
+                    <button class="restart-button" onclick="restartDecisionTree()">Start Over</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="cost-calculator" class="cost-calculator">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testing Cost Calculator</h2>
+                <p class="section-subtitle">Estimate your out-of-pocket costs for genetic testing</p>
+            </div>
+            
+            <div class="calculator-container">
+                <h3 class="calculator-title">Calculate Your Testing Costs</h3>
+                
+                <form id="costCalculator">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="testType">Type of Testing</label>
+                            <select id="testType" required>
+                                <option value="">Select testing type</option>
+                                <option value="basic">Basic Carrier Panel (3-5 conditions)</option>
+                                <option value="expanded">Expanded Panel (10+ conditions)</option>
+                                <option value="comprehensive">Comprehensive Panel (20+ conditions)</option>
+                                <option value="single">Single Condition Test</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="insurance">Insurance Coverage</label>
+                            <select id="insurance" required>
+                                <option value="">Select insurance status</option>
+                                <option value="excellent">Excellent coverage (90%+)</option>
+                                <option value="good">Good coverage (70-89%)</option>
+                                <option value="fair">Fair coverage (50-69%)</option>
+                                <option value="poor">Poor coverage (<50%)</option>
+                                <option value="none">No insurance</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="provider">Provider Type</label>
+                            <select id="provider" required>
+                                <option value="">Select provider</option>
+                                <option value="hospital">Hospital/Medical Center</option>
+                                <option value="clinic">Genetics Clinic</option>
+                                <option value="lab">Direct-to-Consumer Lab</option>
+                                <option value="online">Online Testing Service</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="counseling">Genetic Counseling</label>
+                            <select id="counseling" required>
+                                <option value="">Include counseling?</option>
+                                <option value="yes">Yes, include counseling</option>
+                                <option value="no">No counseling needed</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="calculate-button">Calculate Estimated Cost</button>
+                </form>
+                
+                <div id="costResult" class="cost-result">
+                    <h4>Your Estimated Costs</h4>
+                    <div id="costBreakdown"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testing-centers" class="testing-centers">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Recommended Testing Centers</h2>
+                <p class="section-subtitle">Find trusted providers for Jewish genetic testing</p>
+            </div>
+            
+            <div class="centers-grid">
+                <div class="center-card">
+                    <h3 class="center-name">Mount Sinai Genetic Testing Center</h3>
+                    <p class="center-location">New York, NY</p>
+                    <ul class="center-features">
+                        <li>Comprehensive Jewish genetic panel</li>
+                        <li>On-site genetic counseling</li>
+                        <li>Insurance pre-authorization assistance</li>
+                        <li>Same-day results available</li>
+                        <li>Multilingual staff</li>
+                    </ul>
+                    <div class="center-contact">
+                        <a href="tel:212-659-6774" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="center-card">
+                    <h3 class="center-name">Hadassah Medical Center</h3>
+                    <p class="center-location">Jerusalem, Israel</p>
+                    <ul class="center-features">
+                        <li>World-renowned genetics program</li>
+                        <li>Research-based testing protocols</li>
+                        <li>International patient services</li>
+                        <li>Advanced genetic counseling</li>
+                        <li>Telemedicine consultations</li>
+                    </ul>
+                    <div class="center-contact">
+                        <a href="tel:+972-2-677-7111" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="center-card">
+                    <h3 class="center-name">UCLA Center for Jewish Genetics</h3>
+                    <p class="center-location">Los Angeles, CA</p>
+                    <ul class="center-features">
+                        <li>Specialized Jewish genetic testing</li>
+                        <li>Research participation opportunities</li>
+                        <li>Family planning consultations</li>
+                        <li>Educational workshops</li>
+                        <li>Community outreach programs</li>
+                    </ul>
+                    <div class="center-contact">
+                        <a href="tel:310-825-5648" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="center-card">
+                    <h3 class="center-name">Dor Yeshorim</h3>
+                    <p class="center-location">Brooklyn, NY (Multiple Locations)</p>
+                    <ul class="center-features">
+                        <li>Anonymous compatibility testing</li>
+                        <li>Orthodox community focused</li>
+                        <li>Confidential results system</li>
+                        <li>Community-based screening</li>
+                        <li>Rabbinical endorsement</li>
+                    </ul>
+                    <div class="center-contact">
+                        <a href="tel:718-384-6060" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="center-card">
+                    <h3 class="center-name">JScreen (Emory University)</h3>
+                    <p class="center-location">Atlanta, GA (At-Home Testing)</p>
+                    <ul class="center-features">
+                        <li>At-home saliva testing</li>
+                        <li>Comprehensive genetic panel</li>
+                        <li>Genetic counseling included</li>
+                        <li>Nationwide availability</li>
+                        <li>Affordable pricing options</li>
+                    </ul>
+                    <div class="center-contact">
+                        <a href="tel:404-778-8640" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="center-card">
+                    <h3 class="center-name">Chicago Center for Jewish Genetics</h3>
+                    <p class="center-location">Chicago, IL</p>
+                    <ul class="center-features">
+                        <li>Midwest's leading Jewish genetics center</li>
+                        <li>Comprehensive testing panels</li>
+                        <li>Family history analysis</li>
+                        <li>Support group referrals</li>
+                        <li>Insurance navigation assistance</li>
+                    </ul>
+                    <div class="center-contact">
+                        <a href="tel:312-926-8300" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="preparation-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">How to Prepare for Testing</h2>
+                <p class="section-subtitle">Follow these steps to ensure a smooth testing experience</p>
+            </div>
+            
+            <div class="guide-steps">
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <h3 class="step-title">Gather Family History</h3>
+                    <p class="step-description">Collect detailed medical history from both sides of your family, including information about genetic conditions, carrier status, and any previous testing results.</p>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <h3 class="step-title">Schedule Genetic Counseling</h3>
+                    <p class="step-description">Meet with a genetic counselor to discuss your family history, understand testing options, and learn about potential results and their implications.</p>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <h3 class="step-title">Verify Insurance Coverage</h3>
+                    <p class="step-description">Contact your insurance provider to understand coverage for genetic testing and counseling. Get pre-authorization if required.</p>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <h3 class="step-title">Choose Testing Provider</h3>
+                    <p class="step-description">Select a reputable testing center or laboratory that specializes in Jewish genetic conditions and offers comprehensive panels.</p>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">5</div>
+                    <h3 class="step-title">Complete the Test</h3>
+                    <p class="step-description">Provide a blood or saliva sample as directed. The actual testing process is quick and minimally invasive.</p>
+                </div>
+                
+                <div class="guide-step">
+                    <div class="step-number">6</div>
+                    <h3 class="step-title">Review Results</h3>
+                    <p class="step-description">Meet with your genetic counselor to review results, understand their implications, and discuss next steps for you and your family.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Decision Tree Functionality
+        let decisionData = {};
+        
+        document.querySelectorAll('.option-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const currentStep = this.closest('.decision-step');
+                const stepNumber = currentStep.dataset.step;
+                const nextStep = this.dataset.next;
+                const value = this.dataset.value;
+                
+                // Store the answer
+                decisionData[`step${stepNumber}`] = value;
+                
+                // Hide current step
+                currentStep.classList.remove('active');
+                
+                if (nextStep === 'result') {
+                    showTestingRecommendation();
+                } else {
+                    // Show next step
+                    document.querySelector(`[data-step="${nextStep}"]`).classList.add('active');
+                }
+            });
+        });
+        
+        function showTestingRecommendation() {
+            const ancestry = decisionData.step1;
+            const planning = decisionData.step2;
+            const familyHistory = decisionData.step3;
+            
+            let recommendation = '';
+            let reasoning = '';
+            let nextSteps = '';
+            
+            // Generate recommendation based on answers
+            if (ancestry === 'ashkenazi' && (planning === 'planning' || planning === 'maybe')) {
+                recommendation = 'Highly Recommended';
+                reasoning = 'As someone of Ashkenazi Jewish ancestry who is planning or considering children, genetic testing is strongly recommended. Ashkenazi Jews have higher carrier rates for several genetic conditions.';
+                nextSteps = `
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Schedule genetic counseling consultation</li>
+                        <li>Consider comprehensive Ashkenazi panel</li>
+                        <li>Discuss partner testing if applicable</li>
+                        <li>Review insurance coverage options</li>
+                    </ul>
+                `;
+            } else if (familyHistory === 'yes') {
+                recommendation = 'Strongly Recommended';
+                reasoning = 'With a known family history of genetic conditions, testing can provide valuable information about your carrier status and help with family planning decisions.';
+                nextSteps = `
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Bring detailed family history to consultation</li>
+                        <li>Consider targeted testing for known conditions</li>
+                        <li>Discuss cascade testing for family members</li>
+                    </ul>
+                `;
+            } else if (planning === 'no' && familyHistory === 'no') {
+                recommendation = 'Consider for Future';
+                reasoning = 'While not immediately urgent, genetic testing can still provide valuable health information. Consider testing if your family planning status changes.';
+                nextSteps = `
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Learn about genetic conditions in your ancestry group</li>
+                        <li>Consider testing before family planning</li>
+                        <li>Stay informed about new testing options</li>
+                    </ul>
+                `;
+            } else {
+                recommendation = 'Recommended';
+                reasoning = 'Based on your responses, genetic testing would provide valuable information about your health and family planning options.';
+                nextSteps = `
+                    <ul style="text-align: left; margin: 1rem 0;">
+                        <li>Schedule genetic counseling consultation</li>
+                        <li>Research testing options for your ancestry</li>
+                        <li>Discuss with healthcare provider</li>
+                    </ul>
+                `;
+            }
+            
+            document.getElementById('resultContent').innerHTML = `
+                <h4>Recommendation: ${recommendation}</h4>
+                <p>${reasoning}</p>
+                <h5>Suggested Next Steps:</h5>
+                ${nextSteps}
+                <p><em>This recommendation is for educational purposes only. Consult with a genetic counselor for personalized advice.</em></p>
+            `;
+            
+            document.getElementById('testingResult').classList.add('show');
+        }
+        
+        function restartDecisionTree() {
+            decisionData = {};
+            document.querySelectorAll('.decision-step').forEach(step => {
+                step.classList.remove('active');
+            });
+            document.querySelector('[data-step="1"]').classList.add('active');
+            document.getElementById('testingResult').classList.remove('show');
+        }
+        
+        // Cost Calculator Functionality
+        document.getElementById('costCalculator').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const testType = document.getElementById('testType').value;
+            const insurance = document.getElementById('insurance').value;
+            const provider = document.getElementById('provider').value;
+            const counseling = document.getElementById('counseling').value;
+            
+            let baseCost = 0;
+            let testName = '';
+            
+            // Base costs by test type
+            switch(testType) {
+                case 'basic':
+                    baseCost = 300;
+                    testName = 'Basic Carrier Panel';
+                    break;
+                case 'expanded':
+                    baseCost = 600;
+                    testName = 'Expanded Panel';
+                    break;
+                case 'comprehensive':
+                    baseCost = 1200;
+                    testName = 'Comprehensive Panel';
+                    break;
+                case 'single':
+                    baseCost = 150;
+                    testName = 'Single Condition Test';
+                    break;
+            }
+            
+            // Provider adjustments
+            switch(provider) {
+                case 'hospital':
+                    baseCost *= 1.3;
+                    break;
+                case 'clinic':
+                    baseCost *= 1.1;
+                    break;
+                case 'lab':
+                    baseCost *= 0.8;
+                    break;
+                case 'online':
+                    baseCost *= 0.7;
+                    break;
+            }
+            
+            // Counseling costs
+            let counselingCost = 0;
+            if (counseling === 'yes') {
+                counselingCost = 200;
+            }
+            
+            const totalCost = baseCost + counselingCost;
+            
+            // Insurance coverage
+            let coverage = 0;
+            let outOfPocket = totalCost;
+            
+            switch(insurance) {
+                case 'excellent':
+                    coverage = 0.9;
+                    break;
+                case 'good':
+                    coverage = 0.8;
+                    break;
+                case 'fair':
+                    coverage = 0.6;
+                    break;
+                case 'poor':
+                    coverage = 0.3;
+                    break;
+                case 'none':
+                    coverage = 0;
+                    break;
+            }
+            
+            const insurancePayment = totalCost * coverage;
+            outOfPocket = totalCost - insurancePayment;
+            
+            // Display results
+            document.getElementById('costBreakdown').innerHTML = `
+                <div style="margin-bottom: 1rem;">
+                    <strong>${testName}:</strong> $${baseCost.toFixed(0)}
+                    ${counseling === 'yes' ? `<br><strong>Genetic Counseling:</strong> $${counselingCost}` : ''}
+                    <br><strong>Total Cost:</strong> $${totalCost.toFixed(0)}
+                </div>
+                <div style="margin-bottom: 1rem;">
+                    <strong>Insurance Coverage (${(coverage * 100).toFixed(0)}%):</strong> $${insurancePayment.toFixed(0)}
+                    <br><strong>Your Out-of-Pocket Cost:</strong> $${outOfPocket.toFixed(0)}
+                </div>
+                <p style="font-size: 0.9rem; color: #6b7280;"><em>Costs are estimates and may vary by provider. Contact your insurance company for exact coverage details.</em></p>
+            `;
+            
+            document.getElementById('costResult').classList.add('show');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.center-card, .guide-step').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+
