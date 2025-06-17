@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community Stories & Personal Experiences | JewAllergies.com</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Real stories from Jewish families affected by genetic conditions. Personal experiences, community support, and inspiring journeys of resilience and hope.">
+    <meta name="keywords" content="Jewish genetic stories, personal experiences, community support, genetic testing journeys, family stories, genetic counseling experiences">
+    <meta name="author" content="JewAllergies.com">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jewallergies.com/stories/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Community Stories & Personal Experiences | JewAllergies.com">
+    <meta property="og:description" content="Real stories from Jewish families navigating genetic health challenges">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jewallergies.com/stories/">
+    <meta property="og:image" content="https://jewallergies.com/images/community-stories.jpg">
+    
+    <!-- Structured Data - Stories Collection -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Jewish Genetic Health Stories",
+        "description": "Personal stories and experiences from Jewish families affected by genetic conditions",
+        "url": "https://jewallergies.com/stories/",
+        "mainEntity": {
+            "@type": "ItemList",
+            "name": "Community Stories",
+            "itemListElement": [
+                {
+                    "@type": "Article",
+                    "name": "Sarah's Tay-Sachs Prevention Journey",
+                    "description": "How genetic testing changed one family's future"
+                },
+                {
+                    "@type": "Article", 
+                    "name": "Living Well with Gaucher Disease",
+                    "description": "A mother's story of treatment success and hope"
+                }
+            ]
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "JewAllergies.com",
+            "url": "https://jewallergies.com"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #fef7ff 0%, #f3e8ff 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #7c3aed;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #7c3aed;
+        }
+        
+        /* Hero Section - Stories Theme */
+        .hero {
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 50%, #c084fc 100%);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="hearts" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M10,6 C8,4 4,4 4,8 C4,12 10,16 10,16 C10,16 16,12 16,8 C16,4 12,4 10,6 Z" fill="rgba(255,255,255,0.1)"/></pattern></defs><rect width="100" height="100" fill="url(%23hearts)"/></svg>');
+            opacity: 0.2;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .story-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .category-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-description {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* Featured Stories Section */
+        .featured-stories {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .stories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .story-card {
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid #7c3aed;
+            transition: transform 0.3s ease;
+        }
+        
+        .story-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .story-image {
+            height: 200px;
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+        
+        .story-content {
+            padding: 2.5rem;
+        }
+        
+        .story-header {
+            margin-bottom: 1.5rem;
+        }
+        
+        .story-title {
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .story-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        .story-author {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .author-avatar {
+            width: 30px;
+            height: 30px;
+            background: #7c3aed;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+        
+        .story-excerpt {
+            color: #374151;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        .story-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 2rem;
+        }
+        
+        .story-tag {
+            background: #e0e7ff;
+            color: #7c3aed;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .story-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .read-more-btn {
+            flex: 1;
+            background: #7c3aed;
+            color: white;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .read-more-btn:hover {
+            background: #6d28d9;
+        }
+        
+        .share-btn {
+            background: transparent;
+            color: #7c3aed;
+            border: 2px solid #7c3aed;
+            padding: 0.75rem 1rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        .share-btn:hover {
+            background: #7c3aed;
+            color: white;
+        }
+        
+        /* Community Voices Section */
+        .community-voices {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #fef7ff 0%, #f3e8ff 100%);
+        }
+        
+        .voices-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .voice-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            position: relative;
+        }
+        
+        .quote-icon {
+            position: absolute;
+            top: -10px;
+            left: 20px;
+            background: #7c3aed;
+            color: white;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2rem;
+        }
+        
+        .voice-quote {
+            font-style: italic;
+            color: #374151;
+            margin-bottom: 1.5rem;
+            line-height: 1.7;
+            font-size: 1.1rem;
+        }
+        
+        .voice-author {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .voice-avatar {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+        
+        .voice-info h4 {
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+        }
+        
+        .voice-details {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        /* Story Submission Section */
+        .story-submission {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .submission-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #faf5ff 0%, #f3e8ff 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .submission-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .submission-title {
+            font-size: 1.8rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .submission-form {
+            display: grid;
+            gap: 1.5rem;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #7c3aed;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            margin-top: 1rem;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Support Resources */
+        .support-resources {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #fef7ff 0%, #f3e8ff 100%);
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .resource-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .resource-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #7c3aed 0%, #a855f7 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .resource-title {
+            font-size: 1.3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .resource-description {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .resource-link {
+            background: #7c3aed;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .resource-link:hover {
+            background: #6d28d9;
+        }
+        
+        /* Modal Styles */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .modal.show {
+            display: flex;
+        }
+        
+        .modal-content {
+            background: white;
+            border-radius: 20px;
+            padding: 3rem;
+            max-width: 800px;
+            max-height: 80vh;
+            overflow-y: auto;
+            position: relative;
+        }
+        
+        .modal-close {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: none;
+            border: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: #6b7280;
+        }
+        
+        .modal-close:hover {
+            color: #374151;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .story-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .stories-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">🧬 JewAllergies.com</a>
+            <ul class="nav-links">
+                <li><a href="/conditions/">Conditions</a></li>
+                <li><a href="/populations/">Populations</a></li>
+                <li><a href="/testing/">Testing</a></li>
+                <li><a href="/resources/">Resources</a></li>
+                <li><a href="/stories/" class="active">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Stories of Strength & Hope</h1>
+                <p class="hero-subtitle">Real experiences from Jewish families navigating genetic health challenges. Discover stories of resilience, community support, and the power of knowledge in making informed decisions about genetic health.</p>
+                
+                <div class="story-categories">
+                    <div class="category-card">
+                        <div class="category-icon">💪</div>
+                        <div class="category-title">Survivor Stories</div>
+                        <div class="category-description">Inspiring journeys of overcoming challenges</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">👨‍👩‍👧‍👦</div>
+                        <div class="category-title">Family Journeys</div>
+                        <div class="category-description">How families navigate genetic testing</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🤝</div>
+                        <div class="category-title">Community Support</div>
+                        <div class="category-description">Finding strength in shared experiences</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🌟</div>
+                        <div class="category-title">Success Stories</div>
+                        <div class="category-description">Positive outcomes and breakthroughs</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="featured-stories">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Community Stories</h2>
+                <p class="section-subtitle">In-depth stories from community members sharing their genetic health journeys</p>
+            </div>
+            
+            <div class="stories-grid">
+                <div class="story-card">
+                    <div class="story-image">👩‍⚕️</div>
+                    <div class="story-content">
+                        <div class="story-header">
+                            <h3 class="story-title">Sarah's Prevention Journey: How Genetic Testing Changed Everything</h3>
+                            <div class="story-meta">
+                                <div class="story-author">
+                                    <div class="author-avatar">S</div>
+                                    <span>Sarah Goldman</span>
+                                </div>
+                                <span>•</span>
+                                <span>December 2024</span>
+                                <span>•</span>
+                                <span>8 min read</span>
+                            </div>
+                        </div>
+                        <p class="story-excerpt">
+                            "When my genetic counselor told me I was a Tay-Sachs carrier, my world shifted. But what happened next changed not just my family's future, but my entire perspective on genetic health. This is the story of how knowledge became power, and how one test result led to the most important decisions of my life."
+                        </p>
+                        <div class="story-tags">
+                            <span class="story-tag">Tay-Sachs</span>
+                            <span class="story-tag">Carrier Testing</span>
+                            <span class="story-tag">Family Planning</span>
+                            <span class="story-tag">Prevention</span>
+                        </div>
+                        <div class="story-actions">
+                            <button class="read-more-btn" onclick="openStory('sarah-story')">Read Full Story</button>
+                            <button class="share-btn">Share</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-image">🏃‍♂️</div>
+                    <div class="story-content">
+                        <div class="story-header">
+                            <h3 class="story-title">From Diagnosis to Marathon: Living Well with Gaucher Disease</h3>
+                            <div class="story-meta">
+                                <div class="story-author">
+                                    <div class="author-avatar">D</div>
+                                    <span>David Rosen</span>
+                                </div>
+                                <span>•</span>
+                                <span>November 2024</span>
+                                <span>•</span>
+                                <span>12 min read</span>
+                            </div>
+                        </div>
+                        <p class="story-excerpt">
+                            "At 28, I was exhausted all the time and my spleen was enlarged. The Gaucher disease diagnosis felt like a life sentence. Five years later, I just completed my third marathon. Here's how enzyme replacement therapy and an incredible medical team helped me reclaim my life and athletic dreams."
+                        </p>
+                        <div class="story-tags">
+                            <span class="story-tag">Gaucher Disease</span>
+                            <span class="story-tag">Treatment Success</span>
+                            <span class="story-tag">Athletic Performance</span>
+                            <span class="story-tag">Quality of Life</span>
+                        </div>
+                        <div class="story-actions">
+                            <button class="read-more-btn" onclick="openStory('david-story')">Read Full Story</button>
+                            <button class="share-btn">Share</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-image">👩‍👧‍👦</div>
+                    <div class="story-content">
+                        <div class="story-header">
+                            <h3 class="story-title">Three Generations, One Decision: Our BRCA Testing Story</h3>
+                            <div class="story-meta">
+                                <div class="story-author">
+                                    <div class="author-avatar">R</div>
+                                    <span>Rebecca Stern</span>
+                                </div>
+                                <span>•</span>
+                                <span>October 2024</span>
+                                <span>•</span>
+                                <span>15 min read</span>
+                            </div>
+                        </div>
+                        <p class="story-excerpt">
+                            "When my grandmother was diagnosed with ovarian cancer at 72, we had no idea it would lead to a family-wide genetic testing journey. Three generations of women, three different BRCA results, and three very different paths forward. This is our story of courage, prevention, and the bonds that hold families together."
+                        </p>
+                        <div class="story-tags">
+                            <span class="story-tag">BRCA Mutations</span>
+                            <span class="story-tag">Multi-generational</span>
+                            <span class="story-tag">Cancer Prevention</span>
+                            <span class="story-tag">Family Support</span>
+                        </div>
+                        <div class="story-actions">
+                            <button class="read-more-btn" onclick="openStory('rebecca-story')">Read Full Story</button>
+                            <button class="share-btn">Share</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-image">👨‍👩‍👧</div>
+                    <div class="story-content">
+                        <div class="story-header">
+                            <h3 class="story-title">Building Our Family: A Cystic Fibrosis Carrier Couple's Journey</h3>
+                            <div class="story-meta">
+                                <div class="story-author">
+                                    <div class="author-avatar">M</div>
+                                    <span>Michael & Lisa Cohen</span>
+                                </div>
+                                <span>•</span>
+                                <span>September 2024</span>
+                                <span>•</span>
+                                <span>10 min read</span>
+                            </div>
+                        </div>
+                        <p class="story-excerpt">
+                            "We both tested positive as cystic fibrosis carriers during our engagement. The 25% risk felt overwhelming, but we weren't ready to give up on our dream of having biological children. Through PGT-M and IVF, we welcomed our healthy daughter. Here's how we navigated the complex world of reproductive genetics."
+                        </p>
+                        <div class="story-tags">
+                            <span class="story-tag">Cystic Fibrosis</span>
+                            <span class="story-tag">PGT-M</span>
+                            <span class="story-tag">IVF Journey</span>
+                            <span class="story-tag">Reproductive Choices</span>
+                        </div>
+                        <div class="story-actions">
+                            <button class="read-more-btn" onclick="openStory('michael-lisa-story')">Read Full Story</button>
+                            <button class="share-btn">Share</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-image">🎓</div>
+                    <div class="story-content">
+                        <div class="story-header">
+                            <h3 class="story-title">From Patient to Advocate: My Familial Dysautonomia Mission</h3>
+                            <div class="story-meta">
+                                <div class="story-author">
+                                    <div class="author-avatar">J</div>
+                                    <span>Joshua Friedman</span>
+                                </div>
+                                <span>•</span>
+                                <span>August 2024</span>
+                                <span>•</span>
+                                <span>18 min read</span>
+                            </div>
+                        </div>
+                        <p class="story-excerpt">
+                            "Growing up with familial dysautonomia wasn't easy, but it shaped who I am today. Now 35 and thriving, I've dedicated my career to genetic counseling and FD research. This is the story of how a rare genetic condition became my life's purpose and how the Jewish community's support made all the difference."
+                        </p>
+                        <div class="story-tags">
+                            <span class="story-tag">Familial Dysautonomia</span>
+                            <span class="story-tag">Patient Advocacy</span>
+                            <span class="story-tag">Career Journey</span>
+                            <span class="story-tag">Community Impact</span>
+                        </div>
+                        <div class="story-actions">
+                            <button class="read-more-btn" onclick="openStory('joshua-story')">Read Full Story</button>
+                            <button class="share-btn">Share</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="story-card">
+                    <div class="story-image">🌍</div>
+                    <div class="story-content">
+                        <div class="story-header">
+                            <h3 class="story-title">Connecting Across Continents: A Sephardic Family's Genetic Discovery</h3>
+                            <div class="story-meta">
+                                <div class="story-author">
+                                    <div class="author-avatar">E</div>
+                                    <span>Elena Mizrahi</span>
+                                </div>
+                                <span>•</span>
+                                <span>July 2024</span>
+                                <span>•</span>
+                                <span>14 min read</span>
+                            </div>
+                        </div>
+                        <p class="story-excerpt">
+                            "Our family's genetic testing journey connected us with Sephardic relatives we never knew existed across three continents. What started as routine carrier screening for my pregnancy became a fascinating exploration of our genetic heritage and led to life-changing family connections."
+                        </p>
+                        <div class="story-tags">
+                            <span class="story-tag">Sephardic Heritage</span>
+                            <span class="story-tag">Family Connections</span>
+                            <span class="story-tag">Genetic Genealogy</span>
+                            <span class="story-tag">Cultural Discovery</span>
+                        </div>
+                        <div class="story-actions">
+                            <button class="read-more-btn" onclick="openStory('elena-story')">Read Full Story</button>
+                            <button class="share-btn">Share</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="community-voices">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Community Voices</h2>
+                <p class="section-subtitle">Quick insights and experiences shared by community members</p>
+            </div>
+            
+            <div class="voices-grid">
+                <div class="voice-card">
+                    <div class="quote-icon">"</div>
+                    <p class="voice-quote">
+                        "The genetic counselor at Mount Sinai was incredible. She didn't just explain the science - she understood our cultural concerns and helped us navigate the religious considerations around genetic testing. Having someone who 'got it' made all the difference."
+                    </p>
+                    <div class="voice-author">
+                        <div class="voice-avatar">A</div>
+                        <div class="voice-info">
+                            <h4>Anonymous</h4>
+                            <div class="voice-details">Orthodox Community Member • Brooklyn, NY</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="voice-card">
+                    <div class="quote-icon">"</div>
+                    <p class="voice-quote">
+                        "I was terrified to get tested, thinking it would limit my dating options in our community. But Dor Yeshorim's anonymous system gave me peace of mind. Now I'm engaged to someone who's also been tested, and we both feel confident about our future."
+                    </p>
+                    <div class="voice-author">
+                        <div class="voice-avatar">R</div>
+                        <div class="voice-info">
+                            <h4>Rachel K.</h4>
+                            <div class="voice-details">Age 24 • Lakewood, NJ</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="voice-card">
+                    <div class="quote-icon">"</div>
+                    <p class="voice-quote">
+                        "My son's Gaucher diagnosis felt overwhelming at first. But connecting with other families through the support group showed me that kids with Gaucher can live completely normal lives. He's now 16, plays varsity soccer, and you'd never know he has a genetic condition."
+                    </p>
+                    <div class="voice-author">
+                        <div class="voice-avatar">M</div>
+                        <div class="voice-info">
+                            <h4>Maria S.</h4>
+                            <div class="voice-details">Mother of Teen with Gaucher • Los Angeles, CA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="voice-card">
+                    <div class="quote-icon">"</div>
+                    <p class="voice-quote">
+                        "As a physician, I thought I knew everything about genetics. But when my wife and I both tested positive as Tay-Sachs carriers, I realized how different it feels when it's personal. The genetic counseling we received was invaluable in helping us make informed decisions."
+                    </p>
+                    <div class="voice-author">
+                        <div class="voice-avatar">D</div>
+                        <div class="voice-info">
+                            <h4>Dr. Daniel L.</h4>
+                            <div class="voice-details">Pediatrician • Chicago, IL</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="voice-card">
+                    <div class="quote-icon">"</div>
+                    <p class="voice-quote">
+                        "The JScreen at-home testing was perfect for our busy family. We got comprehensive results, genetic counseling, and peace of mind without having to take time off work or arrange childcare. The process was seamless and professional."
+                    </p>
+                    <div class="voice-author">
+                        <div class="voice-avatar">S</div>
+                        <div class="voice-info">
+                            <h4>Sarah & Josh M.</h4>
+                            <div class="voice-details">Working Parents • Atlanta, GA</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="voice-card">
+                    <div class="quote-icon">"</div>
+                    <p class="voice-quote">
+                        "Finding out I carry a BRCA mutation was scary, but it also felt empowering. I was able to make proactive decisions about my health, including preventive surgery. Knowledge truly is power, and I'm grateful for the genetic testing that gave me options."
+                    </p>
+                    <div class="voice-author">
+                        <div class="voice-avatar">L</div>
+                        <div class="voice-info">
+                            <h4>Lisa R.</h4>
+                            <div class="voice-details">BRCA Positive • Boston, MA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="story-submission">
+        <div class="container">
+            <div class="submission-container">
+                <div class="submission-header">
+                    <h2 class="submission-title">Share Your Story</h2>
+                    <p>Your experience could help others in our community. Share your genetic health journey to inspire and support fellow community members.</p>
+                </div>
+                
+                <form class="submission-form" id="storySubmissionForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name (Optional)</label>
+                            <input type="text" id="lastName">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="storyType">Story Type</label>
+                            <select id="storyType" required>
+                                <option value="">Select story type</option>
+                                <option value="diagnosis">Diagnosis Journey</option>
+                                <option value="treatment">Treatment Success</option>
+                                <option value="prevention">Prevention Story</option>
+                                <option value="family">Family Experience</option>
+                                <option value="advocacy">Advocacy Work</option>
+                                <option value="support">Community Support</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="condition">Related Condition</label>
+                            <select id="condition">
+                                <option value="">Select condition (if applicable)</option>
+                                <option value="tay-sachs">Tay-Sachs Disease</option>
+                                <option value="gaucher">Gaucher Disease</option>
+                                <option value="brca">BRCA Mutations</option>
+                                <option value="cystic-fibrosis">Cystic Fibrosis</option>
+                                <option value="familial-dysautonomia">Familial Dysautonomia</option>
+                                <option value="canavan">Canavan Disease</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="storyTitle">Story Title</label>
+                        <input type="text" id="storyTitle" placeholder="Give your story a compelling title" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="storyContent">Your Story</label>
+                        <textarea id="storyContent" placeholder="Share your experience, challenges, successes, and what you learned along the way. Your story can help others facing similar situations." required></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="privacy">Privacy Preference</label>
+                        <select id="privacy" required>
+                            <option value="">Select privacy level</option>
+                            <option value="full-name">Use my full name</option>
+                            <option value="first-name">Use first name and last initial</option>
+                            <option value="anonymous">Keep completely anonymous</option>
+                        </select>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">Submit Your Story</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="support-resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Support & Resources</h2>
+                <p class="section-subtitle">Connect with support groups, counseling services, and community resources</p>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-icon">🤝</div>
+                    <h3 class="resource-title">Support Groups</h3>
+                    <p class="resource-description">Connect with others who share similar experiences through online and in-person support groups.</p>
+                    <a href="#" class="resource-link">Find Groups</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">💬</div>
+                    <h3 class="resource-title">Peer Counseling</h3>
+                    <p class="resource-description">One-on-one support from trained peer counselors who have walked similar paths.</p>
+                    <a href="#" class="resource-link">Get Connected</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">📚</div>
+                    <h3 class="resource-title">Educational Workshops</h3>
+                    <p class="resource-description">Attend workshops and webinars on genetic health topics relevant to Jewish communities.</p>
+                    <a href="#" class="resource-link">View Schedule</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">🏥</div>
+                    <h3 class="resource-title">Professional Counseling</h3>
+                    <p class="resource-description">Access to licensed genetic counselors and mental health professionals.</p>
+                    <a href="#" class="resource-link">Find Counselors</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">📱</div>
+                    <h3 class="resource-title">Crisis Support</h3>
+                    <p class="resource-description">24/7 crisis support hotline for immediate assistance and emotional support.</p>
+                    <a href="#" class="resource-link">Get Help Now</a>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-icon">🌐</div>
+                    <h3 class="resource-title">Online Community</h3>
+                    <p class="resource-description">Join our private online community forum for ongoing support and discussions.</p>
+                    <a href="#" class="resource-link">Join Forum</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Modals -->
+    <div class="modal" id="sarah-story">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeModal('sarah-story')">&times;</button>
+            <h2>Sarah's Prevention Journey: How Genetic Testing Changed Everything</h2>
+            <div style="margin: 2rem 0; color: #6b7280;">
+                <strong>By Sarah Goldman</strong> • December 2024 • 8 min read
+            </div>
+            <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+                I never thought a simple blood test would change the entire trajectory of my life. At 26, newly engaged and planning my future with my fiancé David, genetic testing seemed like just another item on our pre-wedding checklist. Our rabbi had mentioned it during our pre-marital counseling, and honestly, I was going through the motions more than anything else.
+            </p>
+            <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+                The call came on a Tuesday afternoon while I was at work. "Sarah, this is Dr. Goldstein from the genetic counseling center. I have your test results, and I'd like you to come in to discuss them." The tone in her voice made my stomach drop. I knew immediately that something was wrong.
+            </p>
+            <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+                Sitting in that small office two days later, hearing the words "Tay-Sachs carrier" felt surreal. Dr. Goldstein explained that I carried one copy of the gene mutation that causes Tay-Sachs disease, a devastating neurological condition that primarily affects Ashkenazi Jewish children. She was careful to emphasize that being a carrier didn't mean I would develop the disease myself, but it did mean that if David was also a carrier, our children would have a 25% chance of being born with Tay-Sachs.
+            </p>
+            <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+                The next week waiting for David's results was the longest of my life. We barely talked about it, both of us afraid to voice our fears. When his results came back negative, the relief was overwhelming. But something had shifted in me during that week of uncertainty. I had glimpsed a different future, one where our family planning would be complicated by genetic risk, and it opened my eyes to a reality I had never considered.
+            </p>
+            <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+                That experience led me to volunteer with the genetic counseling center, helping other couples navigate their own testing journeys. I've now spoken with hundreds of families, and I've seen how knowledge truly is power. Some couples discover they're both carriers and choose IVF with genetic testing. Others decide to adopt. Some take the 25% risk and have biological children, armed with the knowledge to make informed decisions.
+            </p>
+            <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+                What I've learned is that there's no "right" choice when it comes to genetic risk - there are only informed choices. The genetic testing that initially terrified me became the foundation for the most important decisions of my life. David and I now have two healthy children, and we're expecting our third. But more importantly, we've become advocates for genetic education in our community.
+            </p>
+            <p style="margin-bottom: 1.5rem; line-height: 1.7;">
+                If you're considering genetic testing, my advice is simple: knowledge is always better than uncertainty. Whatever your results show, you'll have options and support. The Jewish community has incredible resources for genetic health, and you don't have to navigate this journey alone.
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Story modal functionality
+        function openStory(storyId) {
+            document.getElementById(storyId).classList.add('show');
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal(modalId) {
+            document.getElementById(modalId).classList.remove('show');
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside
+        document.querySelectorAll('.modal').forEach(modal => {
+            modal.addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeModal(this.id);
+                }
+            });
+        });
+        
+        // Story submission form
+        document.getElementById('storySubmissionForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const submitBtn = this.querySelector('.submit-btn');
+            
+            // Simulate form submission
+            submitBtn.textContent = 'Submitting...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = 'Story Submitted! ✓';
+                submitBtn.style.background = '#10b981';
+                
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.style.cssText = 'background: #d1fae5; color: #065f46; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
+                successMessage.textContent = 'Thank you for sharing your story! We\'ll review it and get back to you within 48 hours.';
+                
+                this.appendChild(successMessage);
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.textContent = 'Submit Your Story';
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                    successMessage.remove();
+                }, 3000);
+            }, 2000);
+        });
+        
+        // Share functionality
+        document.querySelectorAll('.share-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const storyCard = this.closest('.story-card');
+                const title = storyCard.querySelector('.story-title').textContent;
+                
+                if (navigator.share) {
+                    navigator.share({
+                        title: title,
+                        text: 'Check out this inspiring story from the Jewish genetic health community',
+                        url: window.location.href
+                    });
+                } else {
+                    // Fallback for browsers without Web Share API
+                    const url = window.location.href;
+                    navigator.clipboard.writeText(url).then(() => {
+                        this.textContent = 'Link Copied!';
+                        setTimeout(() => {
+                            this.textContent = 'Share';
+                        }, 2000);
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.story-card, .voice-card, .resource-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+

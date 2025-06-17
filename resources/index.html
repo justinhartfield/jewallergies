@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genetic Health Resources & Tools | JewAllergies.com</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Comprehensive genetic health resources for Jewish communities. Professional tools, educational materials, insurance guides, healthcare provider directory, and downloadable resources.">
+    <meta name="keywords" content="genetic health resources, Jewish genetic counseling, healthcare providers, insurance coverage, genetic testing guides, educational materials">
+    <meta name="author" content="JewAllergies.com">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jewallergies.com/resources/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Genetic Health Resources & Tools | JewAllergies.com">
+    <meta property="og:description" content="Professional resources and comprehensive tools for genetic health in Jewish communities">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jewallergies.com/resources/">
+    <meta property="og:image" content="https://jewallergies.com/images/genetic-resources-toolkit.jpg">
+    
+    <!-- Structured Data - Educational Resources -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "JewAllergies.com Resources Center",
+        "description": "Comprehensive genetic health resources and educational materials for Jewish communities",
+        "url": "https://jewallergies.com/resources/",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Genetic Health Resources",
+            "itemListElement": [
+                {
+                    "@type": "Course",
+                    "name": "Genetic Counseling Guide",
+                    "description": "Comprehensive guide to genetic counseling for Jewish genetic conditions"
+                },
+                {
+                    "@type": "Course", 
+                    "name": "Insurance Navigation Toolkit",
+                    "description": "Tools and guides for navigating genetic testing insurance coverage"
+                }
+            ]
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "Educational Support",
+            "email": "resources@jewallergies.com"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #0369a1;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #0369a1;
+        }
+        
+        /* Hero Section - Resources Theme */
+        .hero {
+            background: linear-gradient(135deg, #0369a1 0%, #1e40af 50%, #1e3a8a 100%);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="tools" width="25" height="25" patternUnits="userSpaceOnUse"><rect x="5" y="5" width="3" height="15" fill="rgba(255,255,255,0.1)"/><rect x="12" y="8" width="3" height="12" fill="rgba(255,255,255,0.08)"/><rect x="19" y="3" width="3" height="18" fill="rgba(255,255,255,0.06)"/><circle cx="7" cy="22" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="14" cy="22" r="1" fill="rgba(255,255,255,0.08)"/><circle cx="21" cy="22" r="1" fill="rgba(255,255,255,0.06)"/></pattern></defs><rect width="100" height="100" fill="url(%23tools)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .resource-categories {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .category-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .category-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .category-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .category-description {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* Professional Resources Section */
+        .professional-resources {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .resources-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .resource-card {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 20px;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid #0369a1;
+            transition: transform 0.3s ease;
+        }
+        
+        .resource-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .resource-header {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .resource-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #0369a1 0%, #1e40af 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+        }
+        
+        .resource-info h3 {
+            font-size: 1.4rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .resource-type {
+            color: #6b7280;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+        
+        .resource-description {
+            color: #374151;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .resource-features {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+        
+        .resource-features li {
+            padding: 0.5rem 0;
+            color: #374151;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .resource-features li::before {
+            content: '✓';
+            color: #0369a1;
+            font-weight: bold;
+            width: 20px;
+        }
+        
+        .resource-actions {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .action-button {
+            flex: 1;
+            background: #0369a1;
+            color: white;
+            padding: 0.75rem 1rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s ease;
+            cursor: pointer;
+        }
+        
+        .action-button:hover {
+            background: #1e40af;
+        }
+        
+        .action-button.secondary {
+            background: transparent;
+            color: #0369a1;
+            border: 2px solid #0369a1;
+        }
+        
+        .action-button.secondary:hover {
+            background: #0369a1;
+            color: white;
+        }
+        
+        /* Healthcare Provider Directory */
+        .provider-directory {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        
+        .provider-search {
+            max-width: 800px;
+            margin: 0 auto 3rem;
+            background: white;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .search-title {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 2rem;
+        }
+        
+        .search-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr auto;
+            gap: 1rem;
+            align-items: end;
+        }
+        
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .form-group label {
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .form-group select,
+        .form-group input {
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group select:focus,
+        .form-group input:focus {
+            outline: none;
+            border-color: #0369a1;
+        }
+        
+        .search-button {
+            background: linear-gradient(135deg, #0369a1 0%, #1e40af 100%);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+        
+        .search-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        .providers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+        }
+        
+        .provider-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            border-left: 5px solid #0369a1;
+        }
+        
+        .provider-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1rem;
+        }
+        
+        .provider-info h3 {
+            font-size: 1.3rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .provider-specialty {
+            color: #0369a1;
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+        
+        .provider-rating {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .stars {
+            color: #fbbf24;
+        }
+        
+        .rating-number {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        .provider-details {
+            margin-bottom: 1.5rem;
+        }
+        
+        .detail-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            margin-bottom: 0.5rem;
+            color: #374151;
+        }
+        
+        .detail-icon {
+            color: #0369a1;
+            width: 16px;
+        }
+        
+        .provider-services {
+            margin-bottom: 1.5rem;
+        }
+        
+        .services-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+        
+        .service-tag {
+            background: #e0f2fe;
+            color: #0369a1;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .provider-contact {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .contact-button {
+            flex: 1;
+            background: #0369a1;
+            color: white;
+            padding: 0.75rem;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 600;
+            transition: background 0.3s ease;
+        }
+        
+        .contact-button:hover {
+            background: #1e40af;
+        }
+        
+        .contact-button.secondary {
+            background: transparent;
+            color: #0369a1;
+            border: 2px solid #0369a1;
+        }
+        
+        .contact-button.secondary:hover {
+            background: #0369a1;
+            color: white;
+        }
+        
+        /* Insurance Guide Section */
+        .insurance-guide {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .insurance-calculator {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .calculator-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        
+        .calculator-title {
+            font-size: 1.8rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .insurance-form {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+        
+        .coverage-result {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            margin-top: 2rem;
+            border-left: 5px solid #0369a1;
+            display: none;
+        }
+        
+        .coverage-result.show {
+            display: block;
+        }
+        
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1rem;
+        }
+        
+        .coverage-percentage {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #0369a1;
+        }
+        
+        .coverage-details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+        }
+        
+        .detail-box {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .detail-label {
+            color: #6b7280;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .detail-value {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: #1f2937;
+        }
+        
+        /* Downloadable Resources */
+        .downloadable-resources {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+        }
+        
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .download-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        
+        .download-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .download-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #0369a1 0%, #1e40af 100%);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            color: white;
+            margin: 0 auto 1.5rem;
+        }
+        
+        .download-title {
+            font-size: 1.3rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .download-description {
+            color: #6b7280;
+            margin-bottom: 1.5rem;
+            line-height: 1.6;
+        }
+        
+        .download-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 1.5rem;
+            font-size: 0.9rem;
+            color: #6b7280;
+        }
+        
+        .download-button {
+            background: linear-gradient(135deg, #0369a1 0%, #1e40af 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+        
+        .download-button:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .resource-categories {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .resources-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .search-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .insurance-form {
+                grid-template-columns: 1fr;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">🧬 JewAllergies.com</a>
+            <ul class="nav-links">
+                <li><a href="/conditions/">Conditions</a></li>
+                <li><a href="/populations/">Populations</a></li>
+                <li><a href="/testing/">Testing</a></li>
+                <li><a href="/resources/" class="active">Resources</a></li>
+                <li><a href="/stories/">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Your Comprehensive Genetic Health Toolkit</h1>
+                <p class="hero-subtitle">Professional resources, educational materials, and practical tools for healthcare providers, genetic counselors, and community leaders. Everything you need to support genetic health in Jewish communities.</p>
+                
+                <div class="resource-categories">
+                    <div class="category-card">
+                        <div class="category-icon">📚</div>
+                        <div class="category-title">Educational Materials</div>
+                        <div class="category-description">Comprehensive guides and fact sheets</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">🏥</div>
+                        <div class="category-title">Provider Directory</div>
+                        <div class="category-description">Find qualified genetic counselors</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">💰</div>
+                        <div class="category-title">Insurance Tools</div>
+                        <div class="category-description">Navigate coverage and costs</div>
+                    </div>
+                    <div class="category-card">
+                        <div class="category-icon">📄</div>
+                        <div class="category-title">Downloadable Resources</div>
+                        <div class="category-description">Professional toolkits and guides</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="professional-resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Professional Resource Library</h2>
+                <p class="section-subtitle">Comprehensive tools and materials for healthcare providers and genetic counselors</p>
+            </div>
+            
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <div class="resource-icon">📋</div>
+                        <div class="resource-info">
+                            <h3>Genetic Counseling Protocols</h3>
+                            <div class="resource-type">Clinical Guidelines</div>
+                        </div>
+                    </div>
+                    <div class="resource-description">
+                        Evidence-based protocols for genetic counseling sessions, including pre-test counseling, result interpretation, and family planning discussions specific to Jewish genetic conditions.
+                    </div>
+                    <ul class="resource-features">
+                        <li>Pre-test counseling checklists</li>
+                        <li>Risk assessment frameworks</li>
+                        <li>Result interpretation guides</li>
+                        <li>Family planning protocols</li>
+                        <li>Cultural sensitivity guidelines</li>
+                    </ul>
+                    <div class="resource-actions">
+                        <a href="#" class="action-button">Download PDF</a>
+                        <a href="#" class="action-button secondary">View Online</a>
+                    </div>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <div class="resource-icon">🎓</div>
+                        <div class="resource-info">
+                            <h3>Community Education Toolkit</h3>
+                            <div class="resource-type">Educational Materials</div>
+                        </div>
+                    </div>
+                    <div class="resource-description">
+                        Complete toolkit for community educators including presentation slides, handouts, and interactive materials for genetic health education programs in Jewish communities.
+                    </div>
+                    <ul class="resource-features">
+                        <li>PowerPoint presentation templates</li>
+                        <li>Multilingual handouts</li>
+                        <li>Interactive workshop activities</li>
+                        <li>Q&A response guides</li>
+                        <li>Community outreach strategies</li>
+                    </ul>
+                    <div class="resource-actions">
+                        <a href="#" class="action-button">Download Toolkit</a>
+                        <a href="#" class="action-button secondary">Preview</a>
+                    </div>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <div class="resource-icon">💊</div>
+                        <div class="resource-info">
+                            <h3>Clinical Decision Support</h3>
+                            <div class="resource-type">Medical Tools</div>
+                        </div>
+                    </div>
+                    <div class="resource-description">
+                        Clinical decision support tools including risk calculators, testing algorithms, and treatment guidelines for healthcare providers managing Jewish genetic conditions.
+                    </div>
+                    <ul class="resource-features">
+                        <li>Risk calculation algorithms</li>
+                        <li>Testing decision trees</li>
+                        <li>Treatment protocols</li>
+                        <li>Referral guidelines</li>
+                        <li>Follow-up schedules</li>
+                    </ul>
+                    <div class="resource-actions">
+                        <a href="#" class="action-button">Access Tools</a>
+                        <a href="#" class="action-button secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <div class="resource-icon">📊</div>
+                        <div class="resource-info">
+                            <h3>Research Database Access</h3>
+                            <div class="resource-type">Research Tools</div>
+                        </div>
+                    </div>
+                    <div class="resource-description">
+                        Access to comprehensive research databases including population genetics data, clinical studies, and epidemiological research on Jewish genetic conditions.
+                    </div>
+                    <ul class="resource-features">
+                        <li>Population frequency data</li>
+                        <li>Clinical study results</li>
+                        <li>Epidemiological trends</li>
+                        <li>Research collaboration tools</li>
+                        <li>Data visualization tools</li>
+                    </ul>
+                    <div class="resource-actions">
+                        <a href="#" class="action-button">Request Access</a>
+                        <a href="#" class="action-button secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <div class="resource-icon">🏛️</div>
+                        <div class="resource-info">
+                            <h3>Regulatory Compliance Guide</h3>
+                            <div class="resource-type">Legal Resources</div>
+                        </div>
+                    </div>
+                    <div class="resource-description">
+                        Comprehensive guide to regulatory compliance for genetic testing and counseling, including HIPAA, GINA, and state-specific regulations affecting genetic health services.
+                    </div>
+                    <ul class="resource-features">
+                        <li>HIPAA compliance checklists</li>
+                        <li>GINA protection guidelines</li>
+                        <li>State regulation summaries</li>
+                        <li>Consent form templates</li>
+                        <li>Privacy protection protocols</li>
+                    </ul>
+                    <div class="resource-actions">
+                        <a href="#" class="action-button">Download Guide</a>
+                        <a href="#" class="action-button secondary">Legal Updates</a>
+                    </div>
+                </div>
+                
+                <div class="resource-card">
+                    <div class="resource-header">
+                        <div class="resource-icon">🌐</div>
+                        <div class="resource-info">
+                            <h3>Multilingual Resources</h3>
+                            <div class="resource-type">Cultural Materials</div>
+                        </div>
+                    </div>
+                    <div class="resource-description">
+                        Educational materials and resources translated into multiple languages including Hebrew, Yiddish, Ladino, and Arabic to serve diverse Jewish communities worldwide.
+                    </div>
+                    <ul class="resource-features">
+                        <li>Hebrew educational materials</li>
+                        <li>Yiddish community guides</li>
+                        <li>Ladino Sephardic resources</li>
+                        <li>Arabic Mizrahi materials</li>
+                        <li>Cultural adaptation guides</li>
+                    </ul>
+                    <div class="resource-actions">
+                        <a href="#" class="action-button">Browse Languages</a>
+                        <a href="#" class="action-button secondary">Request Translation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="provider-directory">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Healthcare Provider Directory</h2>
+                <p class="section-subtitle">Find qualified genetic counselors and healthcare providers specializing in Jewish genetic health</p>
+            </div>
+            
+            <div class="provider-search">
+                <h3 class="search-title">Find Providers Near You</h3>
+                <form class="search-form" id="providerSearch">
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" placeholder="City, State or ZIP">
+                    </div>
+                    <div class="form-group">
+                        <label for="specialty">Specialty</label>
+                        <select id="specialty">
+                            <option value="">All Specialties</option>
+                            <option value="genetic-counselor">Genetic Counselor</option>
+                            <option value="medical-geneticist">Medical Geneticist</option>
+                            <option value="reproductive-endocrinologist">Reproductive Endocrinologist</option>
+                            <option value="pediatric-geneticist">Pediatric Geneticist</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="insurance">Insurance</label>
+                        <select id="insurance">
+                            <option value="">All Insurance</option>
+                            <option value="medicare">Medicare</option>
+                            <option value="medicaid">Medicaid</option>
+                            <option value="private">Private Insurance</option>
+                            <option value="self-pay">Self-Pay</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="search-button">Search</button>
+                </form>
+            </div>
+            
+            <div class="providers-grid">
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-info">
+                            <h3>Dr. Sarah Goldstein, MS, CGC</h3>
+                            <div class="provider-specialty">Certified Genetic Counselor</div>
+                        </div>
+                        <div class="provider-rating">
+                            <div class="stars">★★★★★</div>
+                            <div class="rating-number">4.9 (127)</div>
+                        </div>
+                    </div>
+                    <div class="provider-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <span>Mount Sinai Medical Center, New York, NY</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">📞</div>
+                            <span>(212) 659-6774</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">🕒</div>
+                            <span>Mon-Fri 9AM-5PM</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">💳</div>
+                            <span>Most Insurance Accepted</span>
+                        </div>
+                    </div>
+                    <div class="provider-services">
+                        <div class="services-list">
+                            <span class="service-tag">Jewish Genetic Panel</span>
+                            <span class="service-tag">Preconception Counseling</span>
+                            <span class="service-tag">Prenatal Testing</span>
+                            <span class="service-tag">Family Planning</span>
+                        </div>
+                    </div>
+                    <div class="provider-contact">
+                        <a href="tel:212-659-6774" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Book Online</a>
+                    </div>
+                </div>
+                
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-info">
+                            <h3>Dr. Michael Cohen, MD, PhD</h3>
+                            <div class="provider-specialty">Medical Geneticist</div>
+                        </div>
+                        <div class="provider-rating">
+                            <div class="stars">★★★★★</div>
+                            <div class="rating-number">4.8 (89)</div>
+                        </div>
+                    </div>
+                    <div class="provider-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <span>UCLA Medical Center, Los Angeles, CA</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">📞</div>
+                            <span>(310) 825-5648</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">🕒</div>
+                            <span>Mon-Thu 8AM-6PM</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">💳</div>
+                            <span>Medicare, Private Insurance</span>
+                        </div>
+                    </div>
+                    <div class="provider-services">
+                        <div class="services-list">
+                            <span class="service-tag">Ashkenazi Screening</span>
+                            <span class="service-tag">BRCA Testing</span>
+                            <span class="service-tag">Research Studies</span>
+                            <span class="service-tag">Pediatric Genetics</span>
+                        </div>
+                    </div>
+                    <div class="provider-contact">
+                        <a href="tel:310-825-5648" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Learn More</a>
+                    </div>
+                </div>
+                
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-info">
+                            <h3>Dr. Rachel Levy, MS, CGC</h3>
+                            <div class="provider-specialty">Genetic Counselor</div>
+                        </div>
+                        <div class="provider-rating">
+                            <div class="stars">★★★★★</div>
+                            <div class="rating-number">4.9 (156)</div>
+                        </div>
+                    </div>
+                    <div class="provider-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <span>Chicago Center for Jewish Genetics, IL</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">📞</div>
+                            <span>(312) 926-8300</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">🕒</div>
+                            <span>Mon-Fri 9AM-7PM</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">💳</div>
+                            <span>All Major Insurance</span>
+                        </div>
+                    </div>
+                    <div class="provider-services">
+                        <div class="services-list">
+                            <span class="service-tag">Comprehensive Screening</span>
+                            <span class="service-tag">Telehealth</span>
+                            <span class="service-tag">Support Groups</span>
+                            <span class="service-tag">Insurance Navigation</span>
+                        </div>
+                    </div>
+                    <div class="provider-contact">
+                        <a href="tel:312-926-8300" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Schedule Online</a>
+                    </div>
+                </div>
+                
+                <div class="provider-card">
+                    <div class="provider-header">
+                        <div class="provider-info">
+                            <h3>Dr. David Rosen, MD</h3>
+                            <div class="provider-specialty">Reproductive Endocrinologist</div>
+                        </div>
+                        <div class="provider-rating">
+                            <div class="stars">★★★★☆</div>
+                            <div class="rating-number">4.7 (203)</div>
+                        </div>
+                    </div>
+                    <div class="provider-details">
+                        <div class="detail-item">
+                            <div class="detail-icon">📍</div>
+                            <span>Boston IVF, Massachusetts</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">📞</div>
+                            <span>(617) 735-9000</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">🕒</div>
+                            <span>Mon-Sat 7AM-6PM</span>
+                        </div>
+                        <div class="detail-item">
+                            <div class="detail-icon">💳</div>
+                            <span>Private Insurance, Self-Pay</span>
+                        </div>
+                    </div>
+                    <div class="provider-services">
+                        <div class="services-list">
+                            <span class="service-tag">PGT Testing</span>
+                            <span class="service-tag">IVF</span>
+                            <span class="service-tag">Fertility Preservation</span>
+                            <span class="service-tag">Genetic Screening</span>
+                        </div>
+                    </div>
+                    <div class="provider-contact">
+                        <a href="tel:617-735-9000" class="contact-button">Call Now</a>
+                        <a href="#" class="contact-button secondary">Consultation</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="insurance-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Insurance Coverage Navigator</h2>
+                <p class="section-subtitle">Understand your insurance coverage for genetic testing and counseling</p>
+            </div>
+            
+            <div class="insurance-calculator">
+                <div class="calculator-header">
+                    <h3 class="calculator-title">Check Your Coverage Eligibility</h3>
+                    <p>Answer a few questions to understand your likely insurance coverage</p>
+                </div>
+                
+                <form class="insurance-form" id="insuranceForm">
+                    <div class="form-group">
+                        <label for="insuranceType">Insurance Type</label>
+                        <select id="insuranceType" required>
+                            <option value="">Select insurance type</option>
+                            <option value="private">Private Insurance</option>
+                            <option value="medicare">Medicare</option>
+                            <option value="medicaid">Medicaid</option>
+                            <option value="tricare">TRICARE</option>
+                            <option value="none">No Insurance</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="testingReason">Reason for Testing</label>
+                        <select id="testingReason" required>
+                            <option value="">Select reason</option>
+                            <option value="family-history">Family History</option>
+                            <option value="preconception">Preconception Planning</option>
+                            <option value="prenatal">Prenatal Testing</option>
+                            <option value="symptoms">Current Symptoms</option>
+                            <option value="screening">General Screening</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="ancestry">Primary Ancestry</label>
+                        <select id="ancestry" required>
+                            <option value="">Select ancestry</option>
+                            <option value="ashkenazi">Ashkenazi Jewish</option>
+                            <option value="sephardic">Sephardic Jewish</option>
+                            <option value="mizrahi">Mizrahi Jewish</option>
+                            <option value="mixed">Mixed/Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="age">Age</label>
+                        <select id="age" required>
+                            <option value="">Select age range</option>
+                            <option value="under-25">Under 25</option>
+                            <option value="25-35">25-35</option>
+                            <option value="35-45">35-45</option>
+                            <option value="over-45">Over 45</option>
+                        </select>
+                    </div>
+                </form>
+                
+                <button type="submit" form="insuranceForm" class="action-button" style="width: 100%; margin-top: 1rem;">Check Coverage</button>
+                
+                <div class="coverage-result" id="coverageResult">
+                    <div class="result-header">
+                        <h4>Your Estimated Coverage</h4>
+                        <div class="coverage-percentage" id="coveragePercentage">85%</div>
+                    </div>
+                    <div class="coverage-details">
+                        <div class="detail-box">
+                            <div class="detail-label">Estimated Cost</div>
+                            <div class="detail-value" id="estimatedCost">$150</div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="detail-label">Your Out-of-Pocket</div>
+                            <div class="detail-value" id="outOfPocket">$25</div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="detail-label">Prior Authorization</div>
+                            <div class="detail-value" id="priorAuth">Required</div>
+                        </div>
+                        <div class="detail-box">
+                            <div class="detail-label">Coverage Likelihood</div>
+                            <div class="detail-value" id="likelihood">High</div>
+                        </div>
+                    </div>
+                    <p style="margin-top: 1rem; color: #6b7280; font-style: italic;">
+                        This is an estimate based on typical coverage patterns. Contact your insurance provider for exact benefits.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="downloadable-resources">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Downloadable Resources</h2>
+                <p class="section-subtitle">Professional toolkits, guides, and educational materials ready for immediate use</p>
+            </div>
+            
+            <div class="downloads-grid">
+                <div class="download-card">
+                    <div class="download-icon">📋</div>
+                    <h3 class="download-title">Family History Questionnaire</h3>
+                    <p class="download-description">Comprehensive family history collection form specifically designed for Jewish genetic conditions screening.</p>
+                    <div class="download-meta">
+                        <span>PDF • 4 pages</span>
+                        <span>Updated: Dec 2024</span>
+                    </div>
+                    <button class="download-button">Download PDF</button>
+                </div>
+                
+                <div class="download-card">
+                    <div class="download-icon">🎓</div>
+                    <h3 class="download-title">Patient Education Brochures</h3>
+                    <p class="download-description">Set of patient-friendly brochures explaining common Jewish genetic conditions and testing options.</p>
+                    <div class="download-meta">
+                        <span>PDF Bundle • 12 files</span>
+                        <span>Updated: Nov 2024</span>
+                    </div>
+                    <button class="download-button">Download Bundle</button>
+                </div>
+                
+                <div class="download-card">
+                    <div class="download-icon">💰</div>
+                    <h3 class="download-title">Insurance Pre-Authorization Kit</h3>
+                    <p class="download-description">Complete toolkit for obtaining insurance pre-authorization for genetic testing and counseling services.</p>
+                    <div class="download-meta">
+                        <span>ZIP • Templates & Forms</span>
+                        <span>Updated: Jan 2025</span>
+                    </div>
+                    <button class="download-button">Download Kit</button>
+                </div>
+                
+                <div class="download-card">
+                    <div class="download-icon">📊</div>
+                    <h3 class="download-title">Risk Assessment Calculator</h3>
+                    <p class="download-description">Excel-based risk calculator for determining genetic testing recommendations based on ancestry and family history.</p>
+                    <div class="download-meta">
+                        <span>Excel • Interactive</span>
+                        <span>Updated: Dec 2024</span>
+                    </div>
+                    <button class="download-button">Download Calculator</button>
+                </div>
+                
+                <div class="download-card">
+                    <div class="download-icon">🌐</div>
+                    <h3 class="download-title">Multilingual Resources</h3>
+                    <p class="download-description">Educational materials translated into Hebrew, Yiddish, Ladino, and Arabic for diverse Jewish communities.</p>
+                    <div class="download-meta">
+                        <span>ZIP • 4 Languages</span>
+                        <span>Updated: Oct 2024</span>
+                    </div>
+                    <button class="download-button">Download Languages</button>
+                </div>
+                
+                <div class="download-card">
+                    <div class="download-icon">📱</div>
+                    <h3 class="download-title">Mobile App Resources</h3>
+                    <p class="download-description">QR codes and mobile-optimized resources for patients to access genetic health information on their devices.</p>
+                    <div class="download-meta">
+                        <span>ZIP • QR Codes & Links</span>
+                        <span>Updated: Jan 2025</span>
+                    </div>
+                    <button class="download-button">Download Mobile Kit</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Provider search functionality
+        document.getElementById('providerSearch').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const location = document.getElementById('location').value;
+            const specialty = document.getElementById('specialty').value;
+            const insurance = document.getElementById('insurance').value;
+            
+            // Simulate search results filtering
+            const providers = document.querySelectorAll('.provider-card');
+            providers.forEach(provider => {
+                let show = true;
+                
+                // Simple filtering logic (in real implementation, this would be more sophisticated)
+                if (specialty && !provider.textContent.toLowerCase().includes(specialty.replace('-', ' '))) {
+                    show = false;
+                }
+                
+                if (insurance && !provider.textContent.toLowerCase().includes(insurance)) {
+                    show = false;
+                }
+                
+                provider.style.display = show ? 'block' : 'none';
+            });
+            
+            // Show search results message
+            const resultsMessage = document.createElement('div');
+            resultsMessage.style.cssText = 'text-align: center; margin: 2rem 0; padding: 1rem; background: #e0f2fe; border-radius: 8px; color: #0369a1;';
+            resultsMessage.textContent = `Showing providers ${location ? 'near ' + location : 'matching your criteria'}`;
+            
+            const existingMessage = document.querySelector('.search-results-message');
+            if (existingMessage) {
+                existingMessage.remove();
+            }
+            
+            resultsMessage.className = 'search-results-message';
+            document.querySelector('.providers-grid').parentNode.insertBefore(resultsMessage, document.querySelector('.providers-grid'));
+        });
+        
+        // Insurance coverage calculator
+        document.getElementById('insuranceForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const insuranceType = document.getElementById('insuranceType').value;
+            const testingReason = document.getElementById('testingReason').value;
+            const ancestry = document.getElementById('ancestry').value;
+            const age = document.getElementById('age').value;
+            
+            // Calculate coverage based on inputs
+            let coveragePercentage = 50;
+            let estimatedCost = 800;
+            let priorAuth = 'Maybe';
+            let likelihood = 'Medium';
+            
+            // Insurance type adjustments
+            if (insuranceType === 'private') {
+                coveragePercentage = 80;
+                estimatedCost = 600;
+            } else if (insuranceType === 'medicare') {
+                coveragePercentage = 70;
+                estimatedCost = 500;
+            } else if (insuranceType === 'medicaid') {
+                coveragePercentage = 90;
+                estimatedCost = 300;
+            }
+            
+            // Testing reason adjustments
+            if (testingReason === 'family-history' || testingReason === 'symptoms') {
+                coveragePercentage += 15;
+                priorAuth = 'Likely Not Required';
+                likelihood = 'High';
+            } else if (testingReason === 'preconception' || testingReason === 'prenatal') {
+                coveragePercentage += 10;
+                priorAuth = 'May Be Required';
+                likelihood = 'High';
+            } else if (testingReason === 'screening') {
+                coveragePercentage -= 10;
+                priorAuth = 'Required';
+                likelihood = 'Medium';
+            }
+            
+            // Ancestry adjustments (Ashkenazi typically better covered)
+            if (ancestry === 'ashkenazi') {
+                coveragePercentage += 5;
+                likelihood = 'High';
+            }
+            
+            // Cap at 95%
+            coveragePercentage = Math.min(95, coveragePercentage);
+            
+            const outOfPocket = Math.round(estimatedCost * (1 - coveragePercentage / 100));
+            
+            // Update display
+            document.getElementById('coveragePercentage').textContent = coveragePercentage + '%';
+            document.getElementById('estimatedCost').textContent = '$' + estimatedCost;
+            document.getElementById('outOfPocket').textContent = '$' + outOfPocket;
+            document.getElementById('priorAuth').textContent = priorAuth;
+            document.getElementById('likelihood').textContent = likelihood;
+            
+            document.getElementById('coverageResult').classList.add('show');
+        });
+        
+        // Download button functionality
+        document.querySelectorAll('.download-button').forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.download-card');
+                const title = card.querySelector('.download-title').textContent;
+                
+                // Simulate download
+                this.textContent = 'Downloading...';
+                this.disabled = true;
+                
+                setTimeout(() => {
+                    this.textContent = 'Downloaded ✓';
+                    this.style.background = '#10b981';
+                    
+                    setTimeout(() => {
+                        this.textContent = 'Download PDF';
+                        this.disabled = false;
+                        this.style.background = '';
+                    }, 2000);
+                }, 1500);
+                
+                // In real implementation, this would trigger actual file download
+                console.log('Downloading:', title);
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.resource-card, .provider-card, .download-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
+

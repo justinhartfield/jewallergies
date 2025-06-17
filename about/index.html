@@ -1,0 +1,1188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About JewAllergies.com | Our Mission & Vision</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Learn about JewAllergies.com's mission to provide comprehensive genetic health resources for Jewish communities worldwide. Our team, vision, and commitment to genetic education.">
+    <meta name="keywords" content="JewAllergies mission, genetic health education, Jewish community health, genetic counseling resources, team, vision, about us">
+    <meta name="author" content="JewAllergies.com">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://jewallergies.com/about/">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="About JewAllergies.com | Our Mission & Vision">
+    <meta property="og:description" content="Comprehensive genetic health resources and education for Jewish communities worldwide">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://jewallergies.com/about/">
+    <meta property="og:image" content="https://jewallergies.com/images/about-mission.jpg">
+    
+    <!-- Structured Data - Organization -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "JewAllergies.com",
+        "description": "Comprehensive genetic health resources and education platform for Jewish communities worldwide",
+        "url": "https://jewallergies.com",
+        "logo": "https://jewallergies.com/images/logo.png",
+        "foundingDate": "2023",
+        "mission": "To provide accessible, culturally-sensitive genetic health education and resources to Jewish communities worldwide",
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "General Information",
+            "email": "info@jewallergies.com",
+            "availableLanguage": ["English", "Hebrew", "Yiddish"]
+        },
+        "sameAs": [
+            "https://twitter.com/jewallergies",
+            "https://facebook.com/jewallergies",
+            "https://linkedin.com/company/jewallergies"
+        ],
+        "areaServed": "Worldwide",
+        "audience": {
+            "@type": "Audience",
+            "audienceType": "Jewish communities, healthcare providers, genetic counselors"
+        }
+    }
+    </script>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 20px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 0;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #16a34a;
+            text-decoration: none;
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: #4a5568;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .nav-links a:hover,
+        .nav-links a.active {
+            color: #16a34a;
+        }
+        
+        /* Hero Section - About Theme */
+        .hero {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 50%, #4ade80 100%);
+            color: white;
+            padding: 4rem 0;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="mission" width="30" height="30" patternUnits="userSpaceOnUse"><circle cx="15" cy="15" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="5" cy="5" r="1" fill="rgba(255,255,255,0.08)"/><circle cx="25" cy="5" r="1" fill="rgba(255,255,255,0.08)"/><circle cx="5" cy="25" r="1" fill="rgba(255,255,255,0.08)"/><circle cx="25" cy="25" r="1" fill="rgba(255,255,255,0.08)"/></pattern></defs><rect width="100" height="100" fill="url(%23mission)"/></svg>');
+            opacity: 0.3;
+        }
+        
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: 800;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        
+        .hero-subtitle {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .mission-pillars {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .pillar-card {
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            transition: transform 0.3s ease;
+        }
+        
+        .pillar-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .pillar-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        
+        .pillar-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+        
+        .pillar-description {
+            font-size: 1rem;
+            opacity: 0.9;
+        }
+        
+        /* Mission Statement Section */
+        .mission-statement {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            color: #1f2937;
+            margin-bottom: 1rem;
+        }
+        
+        .section-subtitle {
+            font-size: 1.2rem;
+            color: #6b7280;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .mission-content {
+            max-width: 900px;
+            margin: 0 auto;
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            border-left: 5px solid #16a34a;
+        }
+        
+        .mission-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #374151;
+            margin-bottom: 2rem;
+        }
+        
+        .mission-values {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .value-item {
+            background: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+        
+        .value-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            color: white;
+            margin: 0 auto 1rem;
+        }
+        
+        .value-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .value-description {
+            color: #6b7280;
+            font-size: 0.9rem;
+        }
+        
+        /* Team Section */
+        .team-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+        
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .team-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .team-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .team-image {
+            height: 250px;
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            color: white;
+        }
+        
+        .team-content {
+            padding: 2rem;
+        }
+        
+        .team-name {
+            font-size: 1.4rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .team-role {
+            color: #16a34a;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+        
+        .team-bio {
+            color: #6b7280;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .team-credentials {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .credential-tag {
+            background: #dcfce7;
+            color: #16a34a;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .team-contact {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .contact-link {
+            color: #16a34a;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            color: #15803d;
+        }
+        
+        /* Impact Section */
+        .impact-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .impact-stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .stat-card {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            border-left: 5px solid #16a34a;
+            transition: transform 0.3s ease;
+        }
+        
+        .stat-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #16a34a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .stat-label {
+            color: #6b7280;
+            font-weight: 500;
+        }
+        
+        .stat-description {
+            color: #374151;
+            font-size: 0.9rem;
+            margin-top: 0.5rem;
+        }
+        
+        /* Timeline Section */
+        .timeline-section {
+            padding: 4rem 0;
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+        }
+        
+        .timeline {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+        }
+        
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 3px;
+            background: #16a34a;
+            transform: translateX(-50%);
+        }
+        
+        .timeline-item {
+            display: flex;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        
+        .timeline-content {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            width: 45%;
+            position: relative;
+        }
+        
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: 10%;
+        }
+        
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-left: 10%;
+        }
+        
+        .timeline-date {
+            background: #16a34a;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 1rem;
+        }
+        
+        .timeline-title {
+            font-size: 1.2rem;
+            color: #1f2937;
+            margin-bottom: 0.5rem;
+        }
+        
+        .timeline-description {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        
+        .timeline-marker {
+            position: absolute;
+            left: 50%;
+            top: 2rem;
+            width: 20px;
+            height: 20px;
+            background: #16a34a;
+            border-radius: 50%;
+            transform: translateX(-50%);
+            border: 4px solid white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 4rem 0;
+            background: white;
+        }
+        
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-info {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            border-left: 5px solid #16a34a;
+        }
+        
+        .contact-title {
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            width: 50px;
+            height: 50px;
+            background: #16a34a;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.2rem;
+        }
+        
+        .contact-details h4 {
+            color: #1f2937;
+            margin-bottom: 0.25rem;
+        }
+        
+        .contact-details p {
+            color: #6b7280;
+        }
+        
+        .contact-form {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+            border-radius: 20px;
+            padding: 3rem;
+            border-left: 5px solid #16a34a;
+        }
+        
+        .form-title {
+            font-size: 1.5rem;
+            color: #1f2937;
+            margin-bottom: 2rem;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: #374151;
+        }
+        
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.75rem;
+            border: 2px solid #e5e7eb;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #16a34a;
+        }
+        
+        .form-group textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, #16a34a 0%, #22c55e 100%);
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            width: 100%;
+        }
+        
+        .submit-btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .mission-pillars {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .team-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .timeline::before {
+                left: 20px;
+            }
+            
+            .timeline-item {
+                flex-direction: row !important;
+            }
+            
+            .timeline-content {
+                width: calc(100% - 60px);
+                margin-left: 60px !important;
+                margin-right: 0 !important;
+            }
+            
+            .timeline-marker {
+                left: 20px;
+                transform: none;
+            }
+            
+            .nav-links {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="/" class="logo">🧬 JewAllergies.com</a>
+            <ul class="nav-links">
+                <li><a href="/conditions/">Conditions</a></li>
+                <li><a href="/populations/">Populations</a></li>
+                <li><a href="/testing/">Testing</a></li>
+                <li><a href="/resources/">Resources</a></li>
+                <li><a href="/stories/">Stories</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Empowering Communities Through Knowledge</h1>
+                <p class="hero-subtitle">JewAllergies.com is dedicated to providing comprehensive, culturally-sensitive genetic health education and resources to Jewish communities worldwide. Our mission is to transform genetic knowledge into actionable health decisions.</p>
+                
+                <div class="mission-pillars">
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🎓</div>
+                        <div class="pillar-title">Education</div>
+                        <div class="pillar-description">Comprehensive genetic health education</div>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🤝</div>
+                        <div class="pillar-title">Community</div>
+                        <div class="pillar-description">Building supportive networks</div>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🔬</div>
+                        <div class="pillar-title">Research</div>
+                        <div class="pillar-description">Evidence-based resources</div>
+                    </div>
+                    <div class="pillar-card">
+                        <div class="pillar-icon">🌍</div>
+                        <div class="pillar-title">Accessibility</div>
+                        <div class="pillar-description">Reaching communities worldwide</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="mission-statement">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Mission & Vision</h2>
+                <p class="section-subtitle">Transforming genetic knowledge into empowered health decisions for Jewish communities</p>
+            </div>
+            
+            <div class="mission-content">
+                <p class="mission-text">
+                    JewAllergies.com was founded on the belief that genetic health information should be accessible, understandable, and culturally relevant. We recognize that Jewish communities face unique genetic health challenges, with higher carrier frequencies for certain genetic conditions due to historical population bottlenecks and founder effects.
+                </p>
+                <p class="mission-text">
+                    Our platform bridges the gap between complex genetic science and practical health decisions, providing families with the knowledge they need to make informed choices about genetic testing, family planning, and health management. We are committed to serving all Jewish communities - Ashkenazi, Sephardic, and Mizrahi - with culturally sensitive resources and support.
+                </p>
+                
+                <div class="mission-values">
+                    <div class="value-item">
+                        <div class="value-icon">🎯</div>
+                        <div class="value-title">Accuracy</div>
+                        <div class="value-description">Evidence-based, medically accurate information</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🌐</div>
+                        <div class="value-title">Accessibility</div>
+                        <div class="value-description">Resources available in multiple languages</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🤲</div>
+                        <div class="value-title">Cultural Sensitivity</div>
+                        <div class="value-description">Respecting diverse Jewish traditions</div>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">🔒</div>
+                        <div class="value-title">Privacy</div>
+                        <div class="value-description">Protecting personal health information</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="team-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Expert Team</h2>
+                <p class="section-subtitle">Leading genetic counselors, researchers, and community advocates</p>
+            </div>
+            
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-image">👩‍⚕️</div>
+                    <div class="team-content">
+                        <h3 class="team-name">Dr. Sarah Goldstein, MS, CGC</h3>
+                        <div class="team-role">Founder & Chief Genetic Counselor</div>
+                        <p class="team-bio">
+                            Dr. Goldstein is a board-certified genetic counselor with over 15 years of experience specializing in Jewish genetic conditions. She founded JewAllergies.com after recognizing the need for comprehensive, culturally-sensitive genetic health resources.
+                        </p>
+                        <div class="team-credentials">
+                            <span class="credential-tag">MS, CGC</span>
+                            <span class="credential-tag">ABGC Certified</span>
+                            <span class="credential-tag">15+ Years Experience</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:sarah@jewallergies.com" class="contact-link">Email</a>
+                            <a href="#" class="contact-link">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">👨‍🔬</div>
+                    <div class="team-content">
+                        <h3 class="team-name">Dr. Michael Cohen, MD, PhD</h3>
+                        <div class="team-role">Medical Director & Research Lead</div>
+                        <p class="team-bio">
+                            Dr. Cohen is a medical geneticist and researcher at Mount Sinai Medical Center. His research focuses on population genetics and genetic epidemiology in Jewish communities, with over 100 published papers in the field.
+                        </p>
+                        <div class="team-credentials">
+                            <span class="credential-tag">MD, PhD</span>
+                            <span class="credential-tag">Medical Geneticist</span>
+                            <span class="credential-tag">100+ Publications</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:michael@jewallergies.com" class="contact-link">Email</a>
+                            <a href="#" class="contact-link">Research Profile</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">👩‍💼</div>
+                    <div class="team-content">
+                        <h3 class="team-name">Rachel Stern, MPH</h3>
+                        <div class="team-role">Community Outreach Director</div>
+                        <p class="team-bio">
+                            Rachel leads our community engagement efforts, working with Jewish organizations worldwide to expand access to genetic health education. She has a Master's in Public Health with a focus on community health promotion.
+                        </p>
+                        <div class="team-credentials">
+                            <span class="credential-tag">MPH</span>
+                            <span class="credential-tag">Community Health</span>
+                            <span class="credential-tag">Global Outreach</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:rachel@jewallergies.com" class="contact-link">Email</a>
+                            <a href="#" class="contact-link">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">👨‍💻</div>
+                    <div class="team-content">
+                        <h3 class="team-name">David Rosen, PhD</h3>
+                        <div class="team-role">Technology & Data Director</div>
+                        <p class="team-bio">
+                            Dr. Rosen oversees our technology platform and data analytics. With a PhD in Bioinformatics, he ensures our genetic databases are accurate, secure, and accessible to healthcare providers and researchers.
+                        </p>
+                        <div class="team-credentials">
+                            <span class="credential-tag">PhD Bioinformatics</span>
+                            <span class="credential-tag">Data Security</span>
+                            <span class="credential-tag">Platform Development</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:david@jewallergies.com" class="contact-link">Email</a>
+                            <a href="#" class="contact-link">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">👩‍🎓</div>
+                    <div class="team-content">
+                        <h3 class="team-name">Dr. Elena Mizrahi, MD</h3>
+                        <div class="team-role">Sephardic & Mizrahi Genetics Specialist</div>
+                        <p class="team-bio">
+                            Dr. Mizrahi specializes in genetic conditions affecting Sephardic and Mizrahi Jewish populations. She leads our efforts to expand genetic health resources for these underserved communities.
+                        </p>
+                        <div class="team-credentials">
+                            <span class="credential-tag">MD</span>
+                            <span class="credential-tag">Sephardic Genetics</span>
+                            <span class="credential-tag">Cultural Competency</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:elena@jewallergies.com" class="contact-link">Email</a>
+                            <a href="#" class="contact-link">Research</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-card">
+                    <div class="team-image">👨‍🏫</div>
+                    <div class="team-content">
+                        <h3 class="team-name">Rabbi Joshua Friedman, MS</h3>
+                        <div class="team-role">Religious & Ethical Advisor</div>
+                        <p class="team-bio">
+                            Rabbi Friedman provides guidance on religious and ethical considerations in genetic testing and counseling. He helps ensure our resources are sensitive to diverse Jewish religious perspectives.
+                        </p>
+                        <div class="team-credentials">
+                            <span class="credential-tag">Rabbinical Ordination</span>
+                            <span class="credential-tag">MS Bioethics</span>
+                            <span class="credential-tag">Religious Guidance</span>
+                        </div>
+                        <div class="team-contact">
+                            <a href="mailto:joshua@jewallergies.com" class="contact-link">Email</a>
+                            <a href="#" class="contact-link">Publications</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="impact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Impact</h2>
+                <p class="section-subtitle">Measuring our success in serving Jewish communities worldwide</p>
+            </div>
+            
+            <div class="impact-stats">
+                <div class="stat-card">
+                    <div class="stat-number">250K+</div>
+                    <div class="stat-label">Families Served</div>
+                    <div class="stat-description">Individuals and families who have accessed our resources</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">85</div>
+                    <div class="stat-label">Countries Reached</div>
+                    <div class="stat-description">Global reach across Jewish communities worldwide</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">1,200+</div>
+                    <div class="stat-label">Healthcare Providers</div>
+                    <div class="stat-description">Medical professionals using our resources</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">15</div>
+                    <div class="stat-label">Languages</div>
+                    <div class="stat-description">Resources available in multiple languages</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">98%</div>
+                    <div class="stat-label">User Satisfaction</div>
+                    <div class="stat-description">Positive feedback from community members</div>
+                </div>
+                
+                <div class="stat-card">
+                    <div class="stat-number">50+</div>
+                    <div class="stat-label">Partner Organizations</div>
+                    <div class="stat-description">Collaborations with Jewish and medical organizations</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="timeline-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Our Journey</h2>
+                <p class="section-subtitle">Key milestones in building the world's most comprehensive Jewish genetic health platform</p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <h3 class="timeline-title">Platform Launch</h3>
+                        <p class="timeline-description">
+                            JewAllergies.com officially launched with comprehensive resources for Ashkenazi genetic conditions and partnerships with leading genetic counseling centers.
+                        </p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Early 2024</div>
+                        <h3 class="timeline-title">Sephardic & Mizrahi Expansion</h3>
+                        <p class="timeline-description">
+                            Expanded our platform to include comprehensive resources for Sephardic and Mizrahi Jewish genetic conditions, filling a critical gap in available resources.
+                        </p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Mid 2024</div>
+                        <h3 class="timeline-title">Healthcare Provider Network</h3>
+                        <p class="timeline-description">
+                            Launched our healthcare provider directory and professional resources, connecting families with qualified genetic counselors and specialists worldwide.
+                        </p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Late 2024</div>
+                        <h3 class="timeline-title">Community Stories Platform</h3>
+                        <p class="timeline-description">
+                            Introduced our community stories platform, allowing families to share their genetic health journeys and support others facing similar challenges.
+                        </p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2025</div>
+                        <h3 class="timeline-title">Global Partnerships</h3>
+                        <p class="timeline-description">
+                            Established partnerships with major Jewish organizations worldwide and launched multilingual resources to serve diverse Jewish communities globally.
+                        </p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Future</div>
+                        <h3 class="timeline-title">Research & Innovation</h3>
+                        <p class="timeline-description">
+                            Continuing to expand our research initiatives and develop innovative tools for genetic health education and decision-making support.
+                        </p>
+                    </div>
+                    <div class="timeline-marker"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <p class="section-subtitle">We're here to support you and answer your questions</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 class="contact-title">Contact Information</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div class="contact-details">
+                            <h4>General Information</h4>
+                            <p>info@jewallergies.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🩺</div>
+                        <div class="contact-details">
+                            <h4>Medical Questions</h4>
+                            <p>medical@jewallergies.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🤝</div>
+                        <div class="contact-details">
+                            <h4>Community Partnerships</h4>
+                            <p>partnerships@jewallergies.com</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <div class="contact-details">
+                            <h4>Support Hotline</h4>
+                            <p>1-800-JEW-GENES (1-800-539-4363)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">🌐</div>
+                        <div class="contact-details">
+                            <h4>Social Media</h4>
+                            <p>Follow us for updates and community news</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 class="form-title">Send Us a Message</h3>
+                    
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="general">General Information</option>
+                                <option value="medical">Medical Question</option>
+                                <option value="partnership">Partnership Inquiry</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="support">Support Request</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" placeholder="How can we help you?" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Contact form functionality
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const submitBtn = this.querySelector('.submit-btn');
+            
+            // Simulate form submission
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.textContent = 'Message Sent! ✓';
+                submitBtn.style.background = '#10b981';
+                
+                // Show success message
+                const successMessage = document.createElement('div');
+                successMessage.style.cssText = 'background: #d1fae5; color: #065f46; padding: 1rem; border-radius: 8px; margin-top: 1rem; text-align: center;';
+                successMessage.textContent = 'Thank you for your message! We\'ll get back to you within 24 hours.';
+                
+                this.appendChild(successMessage);
+                
+                // Reset form after delay
+                setTimeout(() => {
+                    this.reset();
+                    submitBtn.textContent = 'Send Message';
+                    submitBtn.disabled = false;
+                    submitBtn.style.background = '';
+                    successMessage.remove();
+                }, 3000);
+            }, 2000);
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+        
+        // Observe elements for animation
+        document.querySelectorAll('.team-card, .stat-card, .timeline-item, .value-item').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+        
+        // Counter animation for stats
+        function animateCounter(element, target) {
+            let current = 0;
+            const increment = target / 100;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                
+                if (target >= 1000) {
+                    element.textContent = Math.floor(current / 1000) + 'K+';
+                } else if (target >= 100) {
+                    element.textContent = Math.floor(current) + '+';
+                } else {
+                    element.textContent = Math.floor(current) + '%';
+                }
+            }, 20);
+        }
+        
+        // Animate counters when they come into view
+        const statObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    const numberElement = entry.target.querySelector('.stat-number');
+                    const text = numberElement.textContent;
+                    let target = parseInt(text.replace(/[^\d]/g, ''));
+                    
+                    if (text.includes('%')) {
+                        target = parseInt(text);
+                    } else if (text.includes('K')) {
+                        target = parseInt(text) * 1000;
+                    }
+                    
+                    animateCounter(numberElement, target);
+                    statObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+        
+        document.querySelectorAll('.stat-card').forEach(card => {
+            statObserver.observe(card);
+        });
+    </script>
+</body>
+</html>
+
